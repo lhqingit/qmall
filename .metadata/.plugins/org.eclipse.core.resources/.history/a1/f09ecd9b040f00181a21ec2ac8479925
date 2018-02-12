@@ -1,0 +1,15 @@
+package net.imwork.lhqing.qmall.content.service;
+
+import net.imwork.lhqing.qmall.common.pojo.QmallResult;
+import net.imwork.lhqing.qmall.pojo.Content;
+
+public interface ContentService {
+
+	/**
+	 * 添加一条内容
+	 * @param content
+	 * @return
+	 */
+	QmallResult addContent(Content content);
+
+}

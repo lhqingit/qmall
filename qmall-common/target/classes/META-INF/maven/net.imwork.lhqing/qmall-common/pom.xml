@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>net.imwork.lhqing</groupId>
+    <artifactId>qmall-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <!-- 在父工程中已经定义过，在子工程中就不需要再写了
+  <groupId>net.imwork.lhqing</groupId>
+   -->
+  <artifactId>qmall-common</artifactId>
+  <!-- 在父工程中已经定义过，在子工程中就不需要再写了
+  <version>0.0.1-SNAPSHOT</version>
+   -->
+   
+  <!-- Q:依赖的传递:其他工程依赖qmall-common，也会自动依赖下面的包 
+  		父工程的pom.xml已经管理了各个依赖包的版本，因此下面的version都不需要写了-->
+  <!-- 依赖的jar包 -->
+  <dependencies>
+   
+	<!-- 时间操作组件 -->
+	<dependency>
+		<groupId>joda-time</groupId>
+		<artifactId>joda-time</artifactId>
+	</dependency>
+	<!-- Apache工具组件 -->
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-io</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>commons-net</groupId>
+		<artifactId>commons-net</artifactId>
+	</dependency>
+	<!-- Jackson Json处理工具包 -->
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+	</dependency>
+	<!-- Q:视频中说这个是之前遗留下来的，在本项目中不需要
+		如果以后因为这个出现错误那就把注释去掉
+	httpclient
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpclient</artifactId>
+	</dependency>
+	 -->
+	<!-- quartz任务调度框架 -->
+	<dependency>
+		<groupId>org.quartz-scheduler</groupId>
+		<artifactId>quartz</artifactId>
+	</dependency>
+	<!-- 单元测试 -->
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<scope>test</scope>
+	</dependency>
+	<!-- 日志处理 -->
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-log4j12</artifactId>
+	</dependency>
+	<!-- Q:图片服务器客户端，该工程通过在Eclipse进行导入然后Run As Maven Install 安装到本地仓库 -->
+	<!-- Q:去掉version会报错，因为父工程中没有在dependencyManagement中对该jar包的版本进行配置 -->
+	<dependency>
+		<groupId>fastdfs_client</groupId>
+	    <artifactId>fastdfs_client</artifactId>
+	    <version>1.25</version>
+	</dependency>
+  </dependencies>
+</project>

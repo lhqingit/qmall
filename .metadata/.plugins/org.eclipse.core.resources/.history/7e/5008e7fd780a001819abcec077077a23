@@ -1,0 +1,18 @@
+package net.imwork.lhqing.qmall.content.service.impl;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * 内容分类管理
+ * @author lhq_i
+ *
+ */
+@Controller
+public class ContentCategoryController {
+	@RequestMapping("/content/category/list")
+	@ResponseBody
+	public List<EasyUITreeNode> getContentCategoryList(){
+		
+	}
+	
+}

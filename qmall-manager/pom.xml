@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>net.imwork.lhqing</groupId>
+    <artifactId>qmall-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <!-- 在父工程中已经定义过，在子工程中就不需要再写了
+  <groupId>net.imwork.lhqing</groupId>
+   -->
+  <artifactId>qmall-manager</artifactId>
+  <!-- 在父工程中已经定义过，在子工程中就不需要再写了
+  <version>0.0.1-SNAPSHOT</version>
+   -->
+  <packaging>pom</packaging>
+  
+  <dependencies>
+  	<dependency>
+  		<!-- Q:依赖qmall-common，qmall-manager可以依赖传递qmall-common所依赖的包
+  			 并且qmall-manager的子工程也会依赖qmall-common-->
+  		<groupId>net.imwork.lhqing</groupId>
+	    <artifactId>qmall-common</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  
+  <modules>
+  	<module>qmall-manager-pojo</module>
+  	<module>qmall-manager-dao</module>
+  	<module>qmall-manager-interface</module>
+  	<module>qmall-manager-service</module>
+  	<!-- Q:把web层分离出去 -->
+  	<!-- <module>qmall-manager-web</module> -->
+  </modules>
+  
+  <!-- 配置tomcat插件 -->
+  <build>
+  	<plugins>
+  		<plugin>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<!-- Q:父工程pom.xml的<pluginManagement>已经定义了版本
+				因此这个地方不用写version
+			 -->
+			<!-- Q:配置访问路径和端口号 -->
+			<configuration>
+				<path>/</path>
+				<port>8080</port>
+			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+  
+  
+  
+</project>

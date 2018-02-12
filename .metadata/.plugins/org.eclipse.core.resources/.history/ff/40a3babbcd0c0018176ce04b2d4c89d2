@@ -1,0 +1,32 @@
+package net.imwork.lhqing.qmall.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import net.imwork.lhqing.qmall.common.pojo.EasyUITreeNode;
+import net.imwork.lhqing.qmall.content.service.ContentCategoryService;
+
+/**
+ * 内容分类管理
+ * @author lhq_i
+ *
+ */
+@Controller()
+@RequestMapping("/content")
+public class ContentCategoryController {
+	@Autowired
+	private ContentCategoryService contentCategoryService;
+	
+	@RequestMapping("/category/list")
+	@ResponseBody
+	public List<EasyUITreeNode> getContentCategoryList(//Q:当传过来的Id是null时parentId默认为0
+			@RequestParam(name="id", defaultValue="0")Long parentId){
+		return contentCategoryService.getContentCategoryList(parentId);
+	}
+	
+}

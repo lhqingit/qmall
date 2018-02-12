@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns="http://java.sun.com/xml/ns/javaee" 
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+		 					 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+		 version="2.5">
+  <display-name>qmall-manager-web</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 表现层不需要下面这个配置了，service层需要进行配置 -->
+  <!-- 加载spring容器 -->
+ 
+  
+  <!-- 解决POST乱码 -->
+  <!-- Q:使用spring的编码过滤器 -->
+  <filter>
+  	<filter-name>CharacterEncodingFilter</filter-name>
+  	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>CharacterEncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- springmvc的前端控制器 -->
+  <servlet>
+  	<servlet-name>qmall-manager</servlet-name>
+  	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  	<init-param>
+  		<!-- 不是必须的，如果不配置contextConfigLocation，
+  			那么默认去WEB-INF/[servlet-name]-servlet.xml加载springmvc的配置文件
+  			比如在此处不配置的话，路径就是在WEB-INF/qmall-manager-servlet.xml-->
+  		<param-name>contextConfigLocation</param-name>
+  		<param-value>classpath:spring/springmvc.xml</param-value>
+  	</init-param>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>qmall-manager</servlet-name>
+  	<!-- Q:拦截除了jsp的所有资源，包括html、css、js等静态资源 -->
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

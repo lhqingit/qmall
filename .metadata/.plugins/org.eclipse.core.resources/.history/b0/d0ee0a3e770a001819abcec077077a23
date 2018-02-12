@@ -1,0 +1,11 @@
+package net.imwork.lhqing.qmall.content.service.impl;
+
+/**
+ * 内容分类管理
+ * @author lhq_i
+ *
+ */
+@Controller
+public class ContentCategoryController {
+
+}

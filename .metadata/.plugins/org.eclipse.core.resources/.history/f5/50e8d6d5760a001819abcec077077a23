@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        				http://www.springframework.org/schema/mvc 
+        				http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+        				http://www.springframework.org/schema/context 
+        				http://www.springframework.org/schema/context/spring-context-4.2.xsd
+       					http://code.alibabatech.com/schema/dubbo 
+       					http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	<!-- 配置包扫描器,Q:扫描基本包及其子包 -->
+	<context:component-scan base-package="net.imwork.lhqing.qmall.controller"/>
+	<!-- Q:三大组件 -->
+	<!-- Q:配置注解形式的两大组件:处理器映射器、处理器适配器 -->
+	<mvc:annotation-driven/>
+	<!-- Q:配置视图解析器 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<!-- 配置资源映射 -->
+	<!-- Q:如果请求的路径符合mapping中的/css/,则去location资源路径去找资源 -->
+	<mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
+	<mvc:resources location="/js/" mapping="/js/**"></mvc:resources>
+	
+	<!-- 引用dubbo服务 -->
+	<dubbo:application name="qmall-manager-web"/>
+	<!-- Q:配置注册中心相关信息 -->
+	<dubbo:registry protocol="zookeeper" address="192.168.25.129:2181"/>
+	<!-- Q:dubbo两边通信，接口就是一个规范 -->
+	<dubbo:reference id="itemService" interface="net.imwork.lhqing.qmall.service.ItemService"/>
+	<dubbo:reference id="itemCatService" interface="net.imwork.lhqing.qmall.service.ItemCatService"/>
+	<dubbo:reference id="itemCatService" interface="net.imwork.lhqing.qmall.content.service.ContentCategoryService"/>
+	
+	<!-- 定义文件上传解析器 -->
+	<bean id="multipartResolver" 
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 设定默认编码 -->
+		<property name="defaultEncoding" value="UTF-8"/>
+		<!-- 设定文件上传的最大值5MB,5*1024*1024 -->
+		<property name="maxUploadSize" value="5242880"/>
+	</bean>
+	<!-- 加载图片服务器访问地址的配置文件，在类中使用时使用@Value注解 -->
+	<context:property-placeholder location="classpath:conf/resource.properties"/>
+</beans>

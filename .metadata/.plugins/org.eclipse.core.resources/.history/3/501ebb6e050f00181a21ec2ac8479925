@@ -1,0 +1,42 @@
+package net.imwork.lhqing.qmall.content.service.impl;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import net.imwork.lhqing.qmall.common.pojo.QmallResult;
+import net.imwork.lhqing.qmall.content.service.ContentService;
+import net.imwork.lhqing.qmall.mapper.ContentMapper;
+import net.imwork.lhqing.qmall.pojo.Content;
+import net.imwork.lhqing.qmall.pojo.ContentExample;
+
+/**
+ * 内容管理service
+ * @author lhq_i
+ *
+ */
+@Service
+public class ContentServiceImpl implements ContentService {
+
+	@Autowired
+	ContentMapper contentMapper;
+	
+	@Override
+	public QmallResult addContent(Content content) {
+		//将内容数据插入到内容表
+		content.setCreated(new Date());
+		contentMapper.insert(content);
+		return QmallResult.ok();
+	}
+
+	@Override
+	public List<Content> getContentListByCid(Long categoryId) {
+		ContentExample example = new ContentExample();
+		example.createCriteria().andCategoryIdEqualTo(categoryId);
+		contentMapper.selectByExampleWithBLOBs(example);
+		return null;
+	}
+
+}

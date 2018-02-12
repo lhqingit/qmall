@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://www.springframework.org/schema/beans/spring-beans-4.2.xsd" uri="file:///E:/Qing_java_software/workspaces/qmall_work/schema/xsd/spring-beans-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/context/spring-context-4.2.xsd" uri="file:///E:/Qing_java_software/workspaces/qmall_work/schema/xsd/spring-context-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/aop/spring-aop-4.2.xsd" uri="file:///E:/Qing_java_software/workspaces/qmall_work/schema/xsd/spring-aop-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/tx/spring-tx-4.2.xsd" uri="file:///E:/Qing_java_software/workspaces/qmall_work/schema/xsd/spring-tx-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/util/spring-util-4.2.xsd" uri="file:///E:/Qing_java_software/workspaces/qmall_work/schema/xsd/spring-util-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/tool/spring-tool-4.2.xsd" uri="file:///E:/Qing_java_software/workspaces/qmall_work/schema/xsd/spring-tool-4.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd" uri="file:///E:/Qing_java_software/workspaces/qmall_work/schema/xsd/spring-mvc-4.2.xsd"/>
+  <system systemId="http://code.alibabatech.com/schema/dubbo/dubbo.xsd" uri="file:///E:/Qing_java_software/workspaces/qmall_work/schema/xsd/dubbo.xsd"/>
+  <uri name="http://mybatis.org/dtd/mybatis-3-config.dtd" uri="file:///E:/Qing_java_software/workspaces/qmall_work/schema/dtd/mybatis-3-config.dtd"/>
+</catalog>

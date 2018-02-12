@@ -1,0 +1,18 @@
+package net.imwork.lhqing.qmall.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+/**
+ * 内容管理
+ * @author lhq_i
+ *
+ */
+@Controller
+@RequestMapping("/content")
+public class ContentController {
+
+	@RequestMapping("/save")
+	@ResponseBody
+	
+}

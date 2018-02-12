@@ -1,0 +1,15 @@
+package net.imwork.lhqing.qmall.content.service.impl;
+
+import net.imwork.lhqing.qmall.common.pojo.QmallResult;
+import net.imwork.lhqing.qmall.content.service.ContentService;
+import net.imwork.lhqing.qmall.pojo.Content;
+
+public class ContentServiceImpl implements ContentService {
+
+	@Override
+	public QmallResult addContent(Content content) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

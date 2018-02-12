@@ -1,0 +1,6 @@
+package net.imwork.lhqing.qmall.content.service;
+
+@Autowired
+public interface ContentService {
+
+}
