@@ -1,0 +1,8 @@
+package net.imwork.lhqing.qmall.jedis;
+
+public class JedisClientTest {
+
+	public void testJedisClient(){
+		
+	}
+}

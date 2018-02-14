@@ -17,7 +17,6 @@
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.FastDFSClient"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.JsonUtils"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.IDUtils"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.pojo.ItemDesc"/>
@@ -26,8 +25,6 @@
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.mapper.ItemDescMapper"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.pojo.ItemDescExample"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.mapper.ContentCategoryMapper"/>
@@ -36,7 +33,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.pojo.EasyUITreeNode"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.pojo.QmallResult"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.content.service.ContentCategoryService"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
@@ -47,4 +43,13 @@
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="redis.clients.jedis.JedisPool"/>
+<fullyQualifiedTypeName name="redis.clients.jedis.JedisCluster"/>
+<fullyQualifiedTypeName name="redis.clients.jedis.HostAndPort"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.jedis.JedisClient"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
+<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.JsonUtils"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,11 @@
+package net.imwork.lhqing.qmall.jedis;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class JedisClientTest {
+
+	@Autowired
+	public void testJedisClient(){
+		ApplicationContext applicationContext = new Class
+	}
+}

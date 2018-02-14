@@ -1,0 +1,17 @@
+package net.imwork.lhqing.qmall.jedis;
+
+import redis.clients.jedis.Jedis;
+
+public class JedisTest {
+	
+	public void testJedis() throws Exception {
+		//创建一个连接Jedis对象，参数：host、post
+		Jedis jedis = new Jedis("192.168.25.128",6379);
+		//直接使用jedis操作redis。所有jedis的命令都对应一个方法
+		jedis.set("qKey", "123");
+		String qKeyStr = jedis.get("qKey");
+		System.out.println(qKeyStr);
+		//关闭连接
+		jedis.close();
+	}
+}

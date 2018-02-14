@@ -9,9 +9,13 @@
 	</section>
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
-		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service"/>
+			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-dao"/>
+			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-content\qmall-content-interface"/>
+			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-content\qmall-content-service"/>
 			<item value="D:\Qing_java\Qing_learning\video\黑马32期\e3商城\e3商城_day01\黑马32期\01.教案-3.0\01.参考资料\FastDFS\bin"/>
 			<item value="D:\Qing_java\Qing_learning\video\黑马32期\e3商城\e3商城_day01\黑马32期\01.教案-3.0\01.参考资料\mybatis\pagehelper-fix"/>
 			<item value="D:\Qing_java\Qing_learning\video\黑马32期\e3商城\e3商城_day01\黑马32期\01.教案-3.0\01.参考资料\mybatis\逆向工程\generatorSqlmapCustom"/>
