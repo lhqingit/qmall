@@ -1,0 +1,6 @@
+package net.imwork.lhqing.qmall.search.service.impl;
+
+public class SearchItemServiceImpl implements SearchItemServiceImpl{
+
+	
+}

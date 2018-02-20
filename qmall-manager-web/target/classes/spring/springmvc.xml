@@ -37,6 +37,7 @@
 	<dubbo:reference id="itemCatService" interface="net.imwork.lhqing.qmall.service.ItemCatService"/>
 	<dubbo:reference id="contentCategoryService" interface="net.imwork.lhqing.qmall.content.service.ContentCategoryService"/>
 	<dubbo:reference id="contentService" interface="net.imwork.lhqing.qmall.content.service.ContentService"/>
+	<dubbo:reference id="searchItemService" interface="net.imwork.lhqing.qmall.search.server.SearchItemService"/>
 	
 	<!-- 定义文件上传解析器 -->
 	<bean id="multipartResolver" 

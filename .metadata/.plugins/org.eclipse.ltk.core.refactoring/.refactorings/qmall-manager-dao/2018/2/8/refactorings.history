@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ItemCatMapper.xml&apos; to &apos;qmall-search-service/src/main/java/net.imwork.lhqing.qmall.search.mapper&apos;&#x0D;&#x0A;- Original project: &apos;qmall-manager-dao&apos;&#x0D;&#x0A;- Destination element: &apos;qmall-search-service/src/main/java/net.imwork.lhqing.qmall.search.mapper&apos;&#x0D;&#x0A;- Original element: &apos;ItemCatMapper.xml&apos;" description="Copy file" destination="=qmall-search-service/src\/main\/java&lt;net.imwork.lhqing.qmall.search.mapper" element1="src/main/java/net/imwork/lhqing/qmall/mapper/ItemCatMapper.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1519007995683" units="0" version="1.0"/>
+</session>

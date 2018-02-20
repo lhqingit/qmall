@@ -1,0 +1,9 @@
+package net.imwork.lhqing.qmall.solrj;
+
+public class TestSolrJ {
+
+	public void addDocument() throws Exception {
+		
+	}
+	
+}

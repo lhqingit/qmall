@@ -1,0 +1,5 @@
+package net.imwork.lhqing.qmall.search.mapper;
+
+public interface ItemMapper {
+
+}

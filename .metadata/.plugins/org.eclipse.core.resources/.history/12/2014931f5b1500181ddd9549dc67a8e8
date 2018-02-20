@@ -1,0 +1,32 @@
+package net.imwork.lhqing.qmall.search.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import net.imwork.lhqing.qmall.common.pojo.QmallResult;
+import net.imwork.lhqing.qmall.search.mapper.SearchItemMapper;
+import net.imwork.lhqing.qmall.search.server.SearchItemService;
+
+/**
+ * 索引库维护Service
+ * @author lhq_i
+ *
+ */
+@Service
+public class SearchItemServiceImpl implements SearchItemService{
+	
+	private SearchItemMapper searchItemMapper;
+
+	@Override
+	public QmallResult importAllItems() {
+		//查询商品列表
+		//遍历商品列表
+		//创建文档对象
+		//向文档对象中添加域？
+		//把文档对象写入索引库
+		//提交
+		//返回导入成功
+		return null;
+	}
+
+	
+}

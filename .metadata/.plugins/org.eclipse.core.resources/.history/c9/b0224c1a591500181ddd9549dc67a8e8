@@ -1,0 +1,20 @@
+package net.imwork.lhqing.qmall.search.service.impl;
+
+import net.imwork.lhqing.qmall.common.pojo.QmallResult;
+import net.imwork.lhqing.qmall.search.server.SearchItemService;
+
+/**
+ * 索引库维护Service
+ * @author lhq_i
+ *
+ */
+public class SearchItemServiceImpl implements SearchItemService{
+
+	@Override
+	public QmallResult importAllItems() {
+		
+		return null;
+	}
+
+	
+}

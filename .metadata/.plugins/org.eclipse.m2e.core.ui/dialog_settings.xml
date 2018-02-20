@@ -7,10 +7,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="qmall-content-service"/>
-			<item value="qmall-content"/>
-			<item value="qmall-content-interface"/>
-			<item value="qmall-parent"/>
+			<item value="qmall-search-service"/>
+			<item value="qmall-search"/>
+			<item value="qmall-search-interface"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -35,6 +34,12 @@
 		</list>
 		<list key="issueManagementUrl">
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.MavenProjectSelectionDialog">
+		<item value="480" key="width"/>
+		<item value="506" key="x"/>
+		<item value="18" key="y"/>
+		<item value="493" key="height"/>
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
@@ -61,6 +66,8 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="qmall-search-service"/>
+			<item value="qmall-search-interface"/>
 			<item value="qmall-content-service"/>
 			<item value="qmall-content-interface"/>
 			<item value="qmall-manager-web"/>
@@ -94,13 +101,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.qmall.content.service"/>
+			<item value="org.qmall.search.service"/>
 		</list>
 		<list key="groupId">
 			<item value="net.imwork.lhqing"/>
 		</list>
 		<list key="artifactId">
-			<item value="qmall-content-service"/>
+			<item value="qmall-search-service"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
