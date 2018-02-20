@@ -1,8 +1,0 @@
-package net.imwork.lhqing.qmall.jedis;
-
-public class JedisTest {
-	
-	public void testJedis() throws Exception {
-		
-	}
-}

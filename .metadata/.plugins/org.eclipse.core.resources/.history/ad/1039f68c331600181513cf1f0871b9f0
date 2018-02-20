@@ -1,0 +1,37 @@
+package net.imwork.lhqing.qmall.common.pojo;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class SearchResult implements Serializable{
+	
+	/**
+	 * Default serial version ID
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private String recourdCount;
+	private Long totalPages;
+	private List<SearchItem> itemList;
+	
+	public String getRecourdCount() {
+		return recourdCount;
+	}
+	public void setRecourdCount(String recourdCount) {
+		this.recourdCount = recourdCount;
+	}
+	public Long getTotalPages() {
+		return totalPages;
+	}
+	public void setTotalPages(Long totalPages) {
+		this.totalPages = totalPages;
+	}
+	public List<SearchItem> getItemList() {
+		return itemList;
+	}
+	public void setItemList(List<SearchItem> itemList) {
+		this.itemList = itemList;
+	}
+	
+	
+}

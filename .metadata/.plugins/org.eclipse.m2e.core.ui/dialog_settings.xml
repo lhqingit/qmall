@@ -7,6 +7,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="qmall-search-web"/>
+			<item value="qmall-parent"/>
 			<item value="qmall-search-service"/>
 			<item value="qmall-search"/>
 			<item value="qmall-search-interface"/>
@@ -101,13 +103,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.qmall.search.service"/>
 		</list>
 		<list key="groupId">
-			<item value="net.imwork.lhqing"/>
 		</list>
 		<list key="artifactId">
-			<item value="qmall-search-service"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

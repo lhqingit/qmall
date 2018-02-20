@@ -1,6 +1,13 @@
 package net.imwork.lhqing.qmall.common.pojo;
 
-public class SearchItem {
+import java.io.Serializable;
+
+public class SearchItem implements Serializable{
+	/**
+	 * Default serial version ID
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private String id;
 	private String title;
 	private String sellPoint;

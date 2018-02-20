@@ -1,0 +1,30 @@
+package net.imwork.lhqing.qmall.search.dao;
+
+import org.apache.solr.client.solrj.SolrQuery;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import net.imwork.lhqing.qmall.common.pojo.SearchResult;
+
+/**
+ * 商品搜索Dao
+ * @author lhq_i
+ *
+ */
+@Repository
+public class SearchDao {
+	
+	
+	@Autowired
+	private SolrServer solrServer;
+	
+	/**
+	 * 根据查询条件查询索引库
+	 * @param query
+	 * @return
+	 */
+	public SearchResult search(SolrQuery query){
+		SO
+		
+	}
+}

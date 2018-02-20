@@ -1,0 +1,21 @@
+package net.imwork.lhqing.qmall.search.dao;
+
+import org.apache.solr.client.solrj.SolrQuery;
+import org.springframework.stereotype.Repository;
+
+import net.imwork.lhqing.qmall.common.pojo.SearchResult;
+
+/**
+ * 商品搜索Dao
+ * @author lhq_i
+ *
+ */
+@Repository
+public class SearchDao {
+	
+	
+	public SearchResult search(SolrQuery solrQuery){
+		
+		
+	}
+}
