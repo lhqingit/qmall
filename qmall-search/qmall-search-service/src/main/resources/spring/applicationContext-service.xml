@@ -20,7 +20,7 @@
 						http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 	<!-- 配置包扫描器,Q:扫描基本包及其子包 -->
 	<!-- Q:扫描到实现类就可以，而不是接口 -->
-	<context:component-scan base-package="net.imwork.lhqing.qmall.search.service"/>
+	<context:component-scan base-package="net.imwork.lhqing.qmall.search.service.impl,net.imwork.lhqing.qmall.search.dao"/>
 	
 	<!-- 使用dubbo发布服务 -->
 	<!-- 提供方应用信息，用于计算依赖关系 -->
@@ -33,6 +33,8 @@
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="net.imwork.lhqing.qmall.search.server.SearchItemService" 
 					ref="searchItemServiceImpl" timeout="300000"/>
+	<dubbo:service interface="net.imwork.lhqing.qmall.search.server.SearchService" 
+					ref="searchServiceImpl" timeout="300000"/>
 	
 	
 	

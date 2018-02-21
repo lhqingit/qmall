@@ -1,0 +1,34 @@
+package net.imwork.lhqing.qmall.search.service.impl;
+
+import org.apache.solr.client.solrj.SolrQuery;
+import org.apache.solr.client.solrj.SolrServerException;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import net.imwork.lhqing.qmall.common.pojo.SearchResult;
+import net.imwork.lhqing.qmall.search.dao.SearchDao;
+
+@Service
+public class SearchService {
+	
+	@Autowired
+	private SearchDao searchDao;
+	
+	
+	public SearchResult search(String keywords, int page , int rows) throws SolrServerException{
+		SolrQuery query = new SolrQuery();
+		
+		query.setQuery(keywords);
+		query.setFields("keywords");
+		
+		int start = (page - 1) / rows;
+		query.setStart(start);
+		query.setRows(rows);
+		
+		query.setHighlight(true);
+		query.setHighlightSimplePre("<em style='color:red'>");
+		query.setHighlightSimplePost("</em>");
+		query.addHighlightField("keywords");
+		
+		return searchDao.search(query);
+	}
+}

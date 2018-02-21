@@ -1,0 +1,13 @@
+package net.imwork.lhqing.qmall.search.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * 商品搜索Controller
+ * @author lhq_i
+ *
+ */
+@Controller
+public class SearchController {
+	
+}

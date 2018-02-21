@@ -32,10 +32,9 @@
 	<!-- Q:配置注册中心相关信息 -->
 	<dubbo:registry protocol="zookeeper" address="192.168.25.129:2181"/>
 	<!-- Q:dubbo两边通信，接口就是一个规范 -->
-	<!-- 
-	<dubbo:reference id="contentService" 
-			interface="net.imwork.lhqing.qmall.content.service.ContentService"/>
-	 -->
+	<dubbo:reference id="searchService" 
+			interface="net.imwork.lhqing.qmall.search.server.SearchService"/>
+	
 	<!-- Q:此处不需要再定义文件上传解析器，因为前台商城不需要上传文件功能 -->
 	
 	<!-- 加载图片服务器访问地址的配置文件，在类中使用时使用@Value注解 -->
