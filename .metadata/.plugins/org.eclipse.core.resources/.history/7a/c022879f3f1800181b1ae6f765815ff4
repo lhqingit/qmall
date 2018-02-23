@@ -1,0 +1,15 @@
+package net.imwork.lhqing.qmall.solrj;
+
+/**
+ * Q:测试使用SolrJ操作SolrCloud
+ * @author lhq_i
+ *
+ */
+public class TestSolrCloud {
+
+	@Test
+	public void create(){
+		
+	}
+	
+}

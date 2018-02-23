@@ -1,0 +1,28 @@
+package net.imwork.lhqing.qmall.solrj;
+
+import org.apache.solr.client.solrj.impl.CloudSolrServer;
+import org.apache.solr.common.SolrInputDocument;
+import org.junit.Test;
+
+/**
+ * Q:测试使用SolrJ操作SolrCloud
+ * @author lhq_i
+ *
+ */
+public class TestSolrCloud {
+
+	@Test
+	public void create(){
+		CloudSolrServer cloudSolrServer = new CloudSolrServer("192.168.25.132:2181,192.168.25.132:2182,192.168.25.132:2183");
+		cloudSolrServer.setDefaultCollection("collection2");
+		
+		SolrInputDocument document = new SolrInputDocument();
+		document.addField("id", "doc666");
+		document.addField("item_title", "solr集群测试商品01");
+		document.addField("item_price", 2499);
+		
+		cloudSolrServer.add(document);
+		
+	}
+	
+}
