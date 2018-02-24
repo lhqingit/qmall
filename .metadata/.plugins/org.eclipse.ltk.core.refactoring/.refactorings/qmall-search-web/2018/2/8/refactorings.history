@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;qmall-search-web/src/main/resources/log4j-with-log-file.properties&apos; to &apos;log4j.properties&apos;" description="Rename resource &apos;log4j-with-log-file.properties&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/log4j-with-log-file.properties" name="log4j.properties" stamp="1519444637288" updateReferences="true"/>
+</session>

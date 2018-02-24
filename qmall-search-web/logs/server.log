@@ -1,0 +1,506 @@
+
+
+[INFO ] 2018-02-24 12:12:53,644 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'qmall-search-web': initialization started
+
+
+[INFO ] 2018-02-24 12:12:53,693 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'qmall-search-web-servlet': startup date [Sat Feb 24 12:12:53 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-02-24 12:12:53,800 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-02-24 12:12:57,234 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-02-24 12:12:57,464 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-02-24 12:12:57,469 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-02-24 12:12:58,828 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\lhq_i\.dubbo\dubbo-registry-192.168.25.129.cache, data: {net.imwork.lhqing.qmall.content.service.ContentService=empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentListByCid,getContentList,addContent,deleteContent,updateContent&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445562698 empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentListByCid,getContentList,addContent,deleteContent,updateContent&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445562698 dubbo://192.168.25.1:20881/net.imwork.lhqing.qmall.content.service.ContentService?anyhost=true&application=qmall-content&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentListByCid,getContentList,deleteContent,addContent,updateContent&pid=6388&side=provider&timeout=300000&timestamp=1519445453680, net.imwork.lhqing.qmall.search.server.SearchItemService=empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchItemService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchItemService&methods=importAllItems&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445571485 empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchItemService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchItemService&methods=importAllItems&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445571485 dubbo://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchItemService?anyhost=true&application=qmall-search&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchItemService&methods=importAllItems&pid=5064&side=provider&timeout=300000&timestamp=1519445382985, net.imwork.lhqing.qmall.search.server.SearchService=empty://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchService?anyhost=true&application=qmall-search&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5064&side=provider&timeout=300000&timestamp=1519445392939, net.imwork.lhqing.qmall.service.ItemCatService=empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemCatService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445567163 empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemCatService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445567163 dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=7468&side=provider&timeout=300000&timestamp=1519445469534, net.imwork.lhqing.qmall.service.ItemService=empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445570253 empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445570253 dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById&pid=7468&side=provider&timeout=300000&timestamp=1519445459637, net.imwork.lhqing.qmall.content.service.ContentCategoryService=empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentCategoryService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445544143 empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentCategoryService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445544143 dubbo://192.168.25.1:20881/net.imwork.lhqing.qmall.content.service.ContentCategoryService?anyhost=true&application=qmall-content&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=6388&side=provider&timeout=300000&timestamp=1519445442702}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-02-24 12:12:59,304 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-02-24 12:13:08,333 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-02-24 12:13:08,335 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-266LMM1
+
+
+[INFO ] 2018-02-24 12:13:08,336 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_144
+
+
+[INFO ] 2018-02-24 12:13:08,337 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-02-24 12:13:08,338 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\Qing_java_software\install\Java\jdk1.8.0_144\jre
+
+
+[INFO ] 2018-02-24 12:13:08,339 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\Qing_java_software\install_free\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-02-24 12:13:08,341 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\Qing_java_software\install\Java\jdk1.8.0_144\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/bin/server;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/bin;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/lib/amd64;E:\Qing_java_software\install_free\apache-maven-3.3.9\bin;E:\Qing_java_software\install\Java\jdk1.8.0_144\bin;E:\Qing_java_software\install\Java\jdk1.8.0_144\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;E:\Qing_java_software\install\MySQL\MySQL Server 5.5\bin;E:\Qing_java_software\install\nodejs\;E:\Qing_java_software\install\SSH Secure Shell;C:\Users\lhq_i\AppData\Roaming\npm;E:\Qing_java_software\workspaces\qmall_work\eclipse;;.
+
+
+[INFO ] 2018-02-24 12:13:08,342 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\lhq_i\AppData\Local\Temp\
+
+
+[INFO ] 2018-02-24 12:13:08,344 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-02-24 12:13:08,347 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-02-24 12:13:08,348 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-02-24 12:13:08,349 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-02-24 12:13:08,350 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=lhq_i
+
+
+[INFO ] 2018-02-24 12:13:08,351 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\lhq_i
+
+
+[INFO ] 2018-02-24 12:13:08,352 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-search-web
+
+
+[INFO ] 2018-02-24 12:13:08,356 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.129:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@4d5079b5
+
+
+[INFO ] 2018-02-24 12:13:14,774 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.129/192.168.25.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-02-24 12:13:14,830 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.129/192.168.25.129:2181, initiating session
+
+
+[INFO ] 2018-02-24 12:13:16,487 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.129/192.168.25.129:2181, sessionid = 0x1607efcbc4a004d, negotiated timeout = 30000
+
+
+[INFO ] 2018-02-24 12:13:16,493 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-02-24 12:13:16,537 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445577972, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:13:19,525 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445577972, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:13:20,407 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445577972, urls: [dubbo://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchService?anyhost=true&application=qmall-search&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5064&side=provider&timeout=300000&timestamp=1519445392939, empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445577972, empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445577972], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:13:21,547 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x49d2e19d, /192.168.25.1:2908 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:13:21,549 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-266LMM1/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:13:21,923 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service net.imwork.lhqing.qmall.search.server.SearchService from url zookeeper://192.168.25.129:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=qmall-search-web&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5096&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1519445577972, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:13:25,474 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String net.imwork.lhqing.qmall.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-02-24 12:13:33,808 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'qmall-search-web-servlet': startup date [Sat Feb 24 12:12:53 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-02-24 12:13:33,875 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'qmall-search-web-servlet': startup date [Sat Feb 24 12:12:53 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-02-24 12:13:34,469 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'qmall-search-web': initialization completed in 40791 ms
+
+
+[INFO ] 2018-02-24 12:30:36,902 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'qmall-search-web': initialization started
+
+
+[INFO ] 2018-02-24 12:30:37,041 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'qmall-search-web-servlet': startup date [Sat Feb 24 12:30:37 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-02-24 12:30:37,291 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-02-24 12:30:42,975 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-02-24 12:30:43,277 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-02-24 12:30:43,288 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-02-24 12:30:45,312 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\lhq_i\.dubbo\dubbo-registry-192.168.25.129.cache, data: {net.imwork.lhqing.qmall.content.service.ContentService=empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentListByCid,getContentList,addContent,deleteContent,updateContent&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445562698 empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentListByCid,getContentList,addContent,deleteContent,updateContent&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445562698 dubbo://192.168.25.1:20881/net.imwork.lhqing.qmall.content.service.ContentService?anyhost=true&application=qmall-content&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentListByCid,getContentList,deleteContent,addContent,updateContent&pid=6388&side=provider&timeout=300000&timestamp=1519445453680, net.imwork.lhqing.qmall.search.server.SearchItemService=empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchItemService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchItemService&methods=importAllItems&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445571485 empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchItemService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchItemService&methods=importAllItems&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445571485 dubbo://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchItemService?anyhost=true&application=qmall-search&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchItemService&methods=importAllItems&pid=5064&side=provider&timeout=300000&timestamp=1519445382985, net.imwork.lhqing.qmall.search.server.SearchService=empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445577972 empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5096&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445577972 dubbo://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchService?anyhost=true&application=qmall-search&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5064&side=provider&timeout=300000&timestamp=1519445392939, net.imwork.lhqing.qmall.service.ItemCatService=empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemCatService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445567163 empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemCatService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445567163 dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=7468&side=provider&timeout=300000&timestamp=1519445469534, net.imwork.lhqing.qmall.service.ItemService=empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445570253 empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445570253 dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById&pid=7468&side=provider&timeout=300000&timestamp=1519445459637, net.imwork.lhqing.qmall.content.service.ContentCategoryService=empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentCategoryService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445544143 empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentCategoryService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445544143 dubbo://192.168.25.1:20881/net.imwork.lhqing.qmall.content.service.ContentCategoryService?anyhost=true&application=qmall-content&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=6388&side=provider&timeout=300000&timestamp=1519445442702}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-02-24 12:30:45,452 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-02-24 12:30:54,748 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-02-24 12:30:54,751 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-266LMM1
+
+
+[INFO ] 2018-02-24 12:30:54,752 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_144
+
+
+[INFO ] 2018-02-24 12:30:54,753 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-02-24 12:30:54,754 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\Qing_java_software\install\Java\jdk1.8.0_144\jre
+
+
+[INFO ] 2018-02-24 12:30:54,756 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\Qing_java_software\install_free\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-02-24 12:30:54,756 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\Qing_java_software\install\Java\jdk1.8.0_144\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/bin/server;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/bin;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/lib/amd64;E:\Qing_java_software\install_free\apache-maven-3.3.9\bin;E:\Qing_java_software\install\Java\jdk1.8.0_144\bin;E:\Qing_java_software\install\Java\jdk1.8.0_144\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;E:\Qing_java_software\install\MySQL\MySQL Server 5.5\bin;E:\Qing_java_software\install\nodejs\;E:\Qing_java_software\install\SSH Secure Shell;C:\Users\lhq_i\AppData\Roaming\npm;E:\Qing_java_software\workspaces\qmall_work\eclipse;;.
+
+
+[INFO ] 2018-02-24 12:30:54,757 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\lhq_i\AppData\Local\Temp\
+
+
+[INFO ] 2018-02-24 12:30:54,760 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-02-24 12:30:54,762 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-02-24 12:30:54,763 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-02-24 12:30:54,763 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-02-24 12:30:54,764 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=lhq_i
+
+
+[INFO ] 2018-02-24 12:30:54,765 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\lhq_i
+
+
+[INFO ] 2018-02-24 12:30:54,766 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-search-web
+
+
+[INFO ] 2018-02-24 12:30:54,770 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.129:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@6a0718fa
+
+
+[INFO ] 2018-02-24 12:30:55,181 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.129/192.168.25.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-02-24 12:30:55,246 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.129/192.168.25.129:2181, initiating session
+
+
+[INFO ] 2018-02-24 12:30:55,349 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.129/192.168.25.129:2181, sessionid = 0x1607efcbc4a004e, negotiated timeout = 30000
+
+
+[INFO ] 2018-02-24 12:30:55,355 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-02-24 12:30:55,448 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=1004&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446644495, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:30:55,505 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=1004&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446644495, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:30:55,568 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=1004&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446644495, urls: [dubbo://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchService?anyhost=true&application=qmall-search&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5064&side=provider&timeout=300000&timestamp=1519445392939, empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=1004&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446644495, empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=1004&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446644495], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:30:57,225 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x4b59fd5f, /192.168.25.1:3347 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:30:57,225 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-266LMM1/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:30:57,375 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service net.imwork.lhqing.qmall.search.server.SearchService from url zookeeper://192.168.25.129:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=qmall-search-web&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=1004&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1519446644495, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:30:58,335 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String net.imwork.lhqing.qmall.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-02-24 12:30:59,497 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'qmall-search-web-servlet': startup date [Sat Feb 24 12:30:37 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-02-24 12:30:59,681 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'qmall-search-web-servlet': startup date [Sat Feb 24 12:30:37 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-02-24 12:31:00,501 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'qmall-search-web': initialization completed in 23516 ms
+
+
+[INFO ] 2018-02-24 12:31:32,672 method:net.imwork.lhqing.qmall.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:27)
+我是一条info日志消息。。。。
+
+
+[ERROR] 2018-02-24 12:31:32,676 method:net.imwork.lhqing.qmall.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:28)
+系统发生异常
+java.lang.ArithmeticException: / by zero
+	at net.imwork.lhqing.qmall.search.controller.SearchController.searchItemList(SearchController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2018-02-24 12:33:26,343 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'qmall-search-web': initialization started
+
+
+[INFO ] 2018-02-24 12:33:26,384 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'qmall-search-web-servlet': startup date [Sat Feb 24 12:33:26 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-02-24 12:33:26,446 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-02-24 12:33:28,419 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-02-24 12:33:28,665 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-02-24 12:33:28,669 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-02-24 12:33:29,265 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\lhq_i\.dubbo\dubbo-registry-192.168.25.129.cache, data: {net.imwork.lhqing.qmall.content.service.ContentService=empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentListByCid,getContentList,addContent,deleteContent,updateContent&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445562698 empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentListByCid,getContentList,addContent,deleteContent,updateContent&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445562698 dubbo://192.168.25.1:20881/net.imwork.lhqing.qmall.content.service.ContentService?anyhost=true&application=qmall-content&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentListByCid,getContentList,deleteContent,addContent,updateContent&pid=6388&side=provider&timeout=300000&timestamp=1519445453680, net.imwork.lhqing.qmall.search.server.SearchItemService=empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchItemService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchItemService&methods=importAllItems&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445571485 empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchItemService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchItemService&methods=importAllItems&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445571485 dubbo://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchItemService?anyhost=true&application=qmall-search&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchItemService&methods=importAllItems&pid=5064&side=provider&timeout=300000&timestamp=1519445382985, net.imwork.lhqing.qmall.search.server.SearchService=empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=1004&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446644495 empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=1004&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446644495 dubbo://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchService?anyhost=true&application=qmall-search&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5064&side=provider&timeout=300000&timestamp=1519445392939, net.imwork.lhqing.qmall.service.ItemCatService=empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemCatService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445567163 empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemCatService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445567163 dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=7468&side=provider&timeout=300000&timestamp=1519445469534, net.imwork.lhqing.qmall.service.ItemService=empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445570253 empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445570253 dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById&pid=7468&side=provider&timeout=300000&timestamp=1519445459637, net.imwork.lhqing.qmall.content.service.ContentCategoryService=empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentCategoryService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445544143 empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentCategoryService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=5072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519445544143 dubbo://192.168.25.1:20881/net.imwork.lhqing.qmall.content.service.ContentCategoryService?anyhost=true&application=qmall-content&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=6388&side=provider&timeout=300000&timestamp=1519445442702}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-02-24 12:33:29,371 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-02-24 12:33:38,574 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-02-24 12:33:38,575 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-266LMM1
+
+
+[INFO ] 2018-02-24 12:33:38,576 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_144
+
+
+[INFO ] 2018-02-24 12:33:38,576 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-02-24 12:33:38,578 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\Qing_java_software\install\Java\jdk1.8.0_144\jre
+
+
+[INFO ] 2018-02-24 12:33:38,579 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\Qing_java_software\install_free\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-02-24 12:33:38,580 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\Qing_java_software\install\Java\jdk1.8.0_144\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/bin/server;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/bin;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/lib/amd64;E:\Qing_java_software\install_free\apache-maven-3.3.9\bin;E:\Qing_java_software\install\Java\jdk1.8.0_144\bin;E:\Qing_java_software\install\Java\jdk1.8.0_144\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;E:\Qing_java_software\install\MySQL\MySQL Server 5.5\bin;E:\Qing_java_software\install\nodejs\;E:\Qing_java_software\install\SSH Secure Shell;C:\Users\lhq_i\AppData\Roaming\npm;E:\Qing_java_software\workspaces\qmall_work\eclipse;;.
+
+
+[INFO ] 2018-02-24 12:33:38,580 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\lhq_i\AppData\Local\Temp\
+
+
+[INFO ] 2018-02-24 12:33:38,582 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-02-24 12:33:38,583 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-02-24 12:33:38,584 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-02-24 12:33:38,584 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-02-24 12:33:38,585 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=lhq_i
+
+
+[INFO ] 2018-02-24 12:33:38,586 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\lhq_i
+
+
+[INFO ] 2018-02-24 12:33:38,586 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-search-web
+
+
+[INFO ] 2018-02-24 12:33:38,590 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.129:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@7e5fc154
+
+
+[INFO ] 2018-02-24 12:33:42,002 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.129/192.168.25.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-02-24 12:33:42,059 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.129/192.168.25.129:2181, initiating session
+
+
+[INFO ] 2018-02-24 12:33:42,829 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.129/192.168.25.129:2181, sessionid = 0x1607efcbc4a004f, negotiated timeout = 30000
+
+
+[INFO ] 2018-02-24 12:33:42,831 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-02-24 12:33:42,855 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=3476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446808999, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:33:42,876 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=3476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446808999, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:33:42,908 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=3476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446808999, urls: [dubbo://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchService?anyhost=true&application=qmall-search&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=5064&side=provider&timeout=300000&timestamp=1519445392939, empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=3476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446808999, empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=3476&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1519446808999], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:33:43,648 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x7a96d0a0, /192.168.25.1:3401 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:33:43,649 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-266LMM1/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:33:43,831 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service net.imwork.lhqing.qmall.search.server.SearchService from url zookeeper://192.168.25.129:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=qmall-search-web&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=3476&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1519446808999, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-02-24 12:33:45,499 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String net.imwork.lhqing.qmall.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-02-24 12:33:48,789 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'qmall-search-web-servlet': startup date [Sat Feb 24 12:33:26 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-02-24 12:33:48,857 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'qmall-search-web-servlet': startup date [Sat Feb 24 12:33:26 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-02-24 12:33:49,495 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'qmall-search-web': initialization completed in 23124 ms

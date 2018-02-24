@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.pojo.EasyUIDataGridResult"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.pojo.ItemCatExample"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.mapper.ItemCatMapper"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.mapper.ItemMapper"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.service.ItemCatService"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="org.csource.fastdfs.ClientGlobal"/>
-<fullyQualifiedTypeName name="org.csource.fastdfs.TrackerClient"/>
-<fullyQualifiedTypeName name="org.csource.fastdfs.StorageClient"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.object.StoredProcedure"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.FastDFSClient"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.IDUtils"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.pojo.ItemDesc"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
@@ -55,9 +42,22 @@
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.search.server.SearchService"/>
 <fullyQualifiedTypeName name="java.awt.Image"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.apache.solr.client.solrj.impl.CloudSolrServer"/>
 <fullyQualifiedTypeName name="org.apache.solr.common.SolrInputDocument"/>
 <fullyQualifiedTypeName name="org.apache.solr.client.solrj.SolrQuery"/>
 <fullyQualifiedTypeName name="org.apache.solr.common.SolrDocument"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.apache.activemq.command.ActiveMQTextMessage"/>
+<fullyQualifiedTypeName name="javax.jms.ConnectionFactory"/>
+<fullyQualifiedTypeName name="org.apache.activemq.ActiveMQConnectionFactory"/>
+<fullyQualifiedTypeName name="javax.jms.Session"/>
+<fullyQualifiedTypeName name="javax.jms.MessageListener"/>
+<fullyQualifiedTypeName name="javax.jms.TextMessage"/>
+<fullyQualifiedTypeName name="javax.jms.Topic"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.HandlerExceptionResolver"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
+<fullyQualifiedTypeName name="com.alibaba.dubbo.common.logger.LoggerFactory"/>
+<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.search.exception.GlobalExceptionResolver"/>
+<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
 </qualifiedTypeNameHistroy>

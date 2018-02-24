@@ -41,6 +41,9 @@ public class SearchController {
 		model.addAttribute("recourdCount", searchResult.getRecourdCount());
 		model.addAttribute("itemList", searchResult.getItemList());
 		
+		//测试错误
+//		int test = 1/0;
+		
 		//返回逻辑视图
 		return "search";
 	}

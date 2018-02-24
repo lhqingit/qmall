@@ -1,0 +1,5 @@
+package net.imwork.lhqing.qmall.search.exception;
+
+public class GlobalExceptionResolver extends HandlerExceptionResolver {
+
+}
