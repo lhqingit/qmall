@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.IDUtils"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.pojo.ItemDesc"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.pojo.ItemExample"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.mapper.ItemDescMapper"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.pojo.ItemDescExample"/>
-<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.mapper.ContentCategoryMapper"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.pojo.ContentCategoryExample"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.pojo.EasyUITreeNode"/>
@@ -21,24 +13,19 @@
 <fullyQualifiedTypeName name="redis.clients.jedis.JedisPool"/>
 <fullyQualifiedTypeName name="redis.clients.jedis.JedisCluster"/>
 <fullyQualifiedTypeName name="redis.clients.jedis.HostAndPort"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.jedis.JedisClient"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.JsonUtils"/>
 <fullyQualifiedTypeName name="org.apache.solr.client.solrj.SolrServer"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.search.server.SearchItemService"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.pojo.QmallResult"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.pojo.SearchItem"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.pojo.SearchResult"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.search.server.SearchService"/>
 <fullyQualifiedTypeName name="java.awt.Image"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
@@ -46,13 +33,11 @@
 <fullyQualifiedTypeName name="org.apache.solr.common.SolrInputDocument"/>
 <fullyQualifiedTypeName name="org.apache.solr.client.solrj.SolrQuery"/>
 <fullyQualifiedTypeName name="org.apache.solr.common.SolrDocument"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.apache.activemq.command.ActiveMQTextMessage"/>
 <fullyQualifiedTypeName name="javax.jms.ConnectionFactory"/>
 <fullyQualifiedTypeName name="org.apache.activemq.ActiveMQConnectionFactory"/>
 <fullyQualifiedTypeName name="javax.jms.Session"/>
 <fullyQualifiedTypeName name="javax.jms.MessageListener"/>
-<fullyQualifiedTypeName name="javax.jms.TextMessage"/>
 <fullyQualifiedTypeName name="javax.jms.Topic"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.HandlerExceptionResolver"/>
 <fullyQualifiedTypeName name="org.slf4j.Logger"/>
@@ -60,4 +45,19 @@
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.search.exception.GlobalExceptionResolver"/>
 <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="javax.jms.TextMessage"/>
+<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.search.server.SearchItemService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.jms.core.JmsTemplate"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="javax.jms.Destination"/>
+<fullyQualifiedTypeName name="org.springframework.jms.core.MessageCreator"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.mysql.fabric.xmlrpc.base.Array"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.JsonUtils"/>
 </qualifiedTypeNameHistroy>

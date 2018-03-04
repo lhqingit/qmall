@@ -1,8 +1,0 @@
-package net.imwork.lhqing.qmall.search.server;
-
-import net.imwork.lhqing.qmall.common.pojo.QmallResult;
-
-public interface SearchItemService {
-
-	QmallResult importAllItems();
-}

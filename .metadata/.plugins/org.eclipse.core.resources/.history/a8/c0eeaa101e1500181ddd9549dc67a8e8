@@ -1,8 +1,0 @@
-package net.imwork.lhqing.qmall.search.mapper;
-
-public interface ItemMapper {
-	/**
-	 * 查询所有商品列表
-	 */
-	List<SearchItem> getItemList();
-}

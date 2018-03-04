@@ -9,4 +9,10 @@ public interface SearchItemMapper {
 	 * 查询所有商品列表
 	 */
 	List<SearchItem> getItemList();
+	
+	/**
+	 * 根据Id获取搜索商品
+	 */
+	SearchItem getItemById(long itemId);
+	
 }

@@ -1,0 +1,27 @@
+package net.imwork.lhqing.qmall.search.message;
+
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.MessageListener;
+import javax.jms.TextMessage;
+
+/**
+ * 监听商品添加（Q:和编辑）消息，将对应的商品信息同步到索引库
+ * @author lhq_i
+ *
+ */
+public class ItemAddMessageListener implements MessageListener {
+
+	@Override
+	public void onMessage(Message message) {
+		try {
+			TextMessage textMessage = (TextMessage) message;
+			String itemId = textMessage.getText();
+			
+		} catch (JMSException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

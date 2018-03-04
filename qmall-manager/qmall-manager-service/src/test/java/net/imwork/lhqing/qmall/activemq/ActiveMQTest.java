@@ -73,7 +73,8 @@ public class ActiveMQTest {
 		//使用Connection对象创建一个Session对象
 		Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 		//创建一个Destination对象的queue对象
-		Queue queue = session.createQueue("qmall-test-queue");
+//		Queue queue = session.createQueue("qmall-test-queue");
+		Queue queue = session.createQueue("spring-queue");
 		//使用Session对象创建一个消费者对象
 		MessageConsumer consumer = session.createConsumer(queue);
 		//接收消息

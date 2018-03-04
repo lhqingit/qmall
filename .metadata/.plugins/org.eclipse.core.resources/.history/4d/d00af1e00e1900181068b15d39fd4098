@@ -1,7 +1,0 @@
-package net.imwork.lhqing.qmall.search.exception;
-
-import org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver;
-
-public class GlobalExceptionResolver extends ExceptionHandlerExceptionResolver {
-
-}

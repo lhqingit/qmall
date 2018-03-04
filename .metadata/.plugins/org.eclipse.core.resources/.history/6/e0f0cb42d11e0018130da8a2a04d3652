@@ -1,0 +1,8 @@
+package net.imwork.lhqing.qmall.activemq;
+
+public class MessageConsumer {
+	@Test
+	public void msgConsumer() throws Exception {
+		
+	}
+}

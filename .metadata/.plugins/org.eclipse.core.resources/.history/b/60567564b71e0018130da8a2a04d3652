@@ -1,0 +1,12 @@
+package net.imwork.lhqing.qmall.activemq;
+
+import org.junit.Test;
+
+public class ActiveMqSpring {
+
+	@Test
+	public void sendMessage() throws Exception {
+
+	}
+
+}

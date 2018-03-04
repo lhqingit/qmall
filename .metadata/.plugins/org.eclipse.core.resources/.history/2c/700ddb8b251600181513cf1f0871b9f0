@@ -1,9 +1,0 @@
-package net.imwork.lhqing.qmall.search.dao;
-
-import org.springframework.stereotype.Repository;
-
-@Repository
-public class SearchDao {
-	
-	public SearchResult 
-}

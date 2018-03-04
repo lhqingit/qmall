@@ -1,8 +1,0 @@
-package net.imwork.lhqing.qmall.controller;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-public class SearchItemController {
-
-}

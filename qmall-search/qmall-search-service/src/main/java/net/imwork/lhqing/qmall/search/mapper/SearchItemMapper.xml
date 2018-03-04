@@ -26,4 +26,22 @@
 	WHERE
 		i.`status` = 1
   </select>
+  
+  <select id="getItemById" parameterType="long" resultType="net.imwork.lhqing.qmall.common.pojo.SearchItem">
+  	SELECT
+		i.id,
+		i.title,
+		i.sell_point sellPoint,
+		i.price,
+		i.image,
+		ic.`name` categoryName
+	FROM
+		item i
+	LEFT JOIN item_cat ic ON i.cid = ic.id
+	WHERE
+		i.`status` = 1
+	AND i.id = #{itemId}
+  
+  </select>
+  
 </mapper>
