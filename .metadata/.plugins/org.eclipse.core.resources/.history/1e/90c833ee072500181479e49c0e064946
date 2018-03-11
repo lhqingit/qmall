@@ -1,0 +1,11 @@
+package net.imwork.lhqing.qmall.freemarker;
+
+import org.junit.Test;
+
+public class FreeMarkerTest {
+
+	@Test
+	public void testFreeMarker(){
+		
+	}
+}

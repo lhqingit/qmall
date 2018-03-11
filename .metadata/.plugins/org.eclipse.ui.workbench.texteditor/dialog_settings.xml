@@ -2,25 +2,25 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="qmall-item-web" key="selection"/>
+		<item value="/" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="\"/>
+			<item value="getItemDesc"/>
 			<item value="qmall-portal-web"/>
 			<item value="topicDestination"/>
 			<item value="set"/>
 			<item value="active"/>
 			<item value="activemq"/>
 			<item value="solrj"/>
-			<item value="onePicUpload"/>
-			<item value="$(&quot;#contentEditForm&quot;).form(&quot;load&quot;,data);"/>
 		</list>
 		<list key="replacehistory">
+			<item value="/"/>
 			<item value="qmall-item-web"/>
 			<item value="Qmall"/>
-			<item value="/"/>
 			<item value=""/>
 			<item value="net.imwork.lhqing"/>
 		</list>

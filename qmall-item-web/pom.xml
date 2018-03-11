@@ -95,6 +95,12 @@
 		<artifactId>pagehelper</artifactId>
 	</dependency>
 	
+	<dependency>
+	  <groupId>org.freemarker</groupId>
+	  <artifactId>freemarker</artifactId>
+	</dependency>
+	
+	
   </dependencies>
   
   <!-- 配置tomcat插件 -->

@@ -1,0 +1,28 @@
+package net.imwork.lhqing.qmall.freemarker;
+
+import org.junit.Test;
+
+import freemarker.template.Configuration;
+
+public class FreeMarkerTest {
+
+	@Test
+	public void testFreeMarker(){
+		//1.创建一个模板文件
+		//2.创建一个Configuration对象
+		Configuration configuration = new Configuration(Configuration.getVersion());
+		//3.设置模板文件保存的目录
+		configuration.setDirectoryForTemplateLoading(new File());
+		//4.模板文件的编码格式，一般为UTF-8
+		//5.加载一个模板文件，创建一个模板对象
+		//6.创建一个数据集。可以是pojo也可以是map.推荐使用map
+		//7.创建一个Writer对象，指定输出文件的路径及文件名
+		//8.生成静态页面
+		//9.关闭流
+		
+		
+		
+		
+		
+	}
+}

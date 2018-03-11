@@ -1,0 +1,8 @@
+package net.imwork.lhqing.qmall.freemarker;
+
+public class FreeMarkerTest {
+
+	public void testFreeMarker(){
+		
+	}
+}

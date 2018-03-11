@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>net.imwork.lhqing</groupId>
+    <artifactId>qmall-manager</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>qmall-manager-dao</artifactId>
+  
+  <!-- Q:依赖的jar包 -->
+  <dependencies>
+  	<dependency>
+  		<groupId>net.imwork.lhqing</groupId>
+	    <artifactId>qmall-manager-pojo</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+ 
+  	<!-- Q:父工程的pom.xml已经管理了各个依赖包的版本，因此下面的version都不需要写了-->
+  	<!-- Mybatis -->
+	<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis-spring</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>com.github.miemiedev</groupId>
+		<artifactId>mybatis-paginator</artifactId>
+	</dependency>
+	<!-- Q:用于分页，第三方提供的一个mybatis的一个分页插件 ，用于弥补逆向工程不可以进行分页的问题
+		pagehelper项目使用的编译版本是1.7与本项目不同，之后如果有冲突过来检查
+	-->
+	<dependency>
+		<groupId>com.github.pagehelper</groupId>
+		<artifactId>pagehelper</artifactId>
+	</dependency>
+	<!-- MySql -->
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+	</dependency>
+	<!-- 连接池 -->
+	<dependency>
+		<groupId>com.alibaba</groupId>
+		<artifactId>druid</artifactId>
+	</dependency>
+	
+  </dependencies>
+  
+  <!-- Q:配置resource目录 -->
+  <!-- 如果不添加此节点，mybatis的mapper.xml文件都会被漏掉 -->
+  <build>
+  	<resources>
+  		<resource>
+  			<directory>src/main/java</directory>
+  			<includes>
+  				<include>**/*.properties</include>
+  				<include>**/*.xml</include>
+  			</includes>
+  			<filtering>false</filtering>
+  		</resource>
+  		<!-- Q:配置了上面的资源目录，那么默认的资源目录src/main/resource就会失效
+  			因此需要在下面进行重新进行配置，但由于此处src/main/resource目录下没有东西，因此也就不需要配置了 -->
+  	</resources>
+  </build>
+  
+</project>
