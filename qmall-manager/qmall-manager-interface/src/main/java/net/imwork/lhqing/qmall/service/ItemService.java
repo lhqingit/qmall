@@ -3,6 +3,7 @@ package net.imwork.lhqing.qmall.service;
 import net.imwork.lhqing.qmall.common.pojo.EasyUIDataGridResult;
 import net.imwork.lhqing.qmall.common.pojo.QmallResult;
 import net.imwork.lhqing.qmall.pojo.Item;
+import net.imwork.lhqing.qmall.pojo.ItemDesc;
 
 /**
  * 商品管理
@@ -75,5 +76,12 @@ public interface ItemService {
 	 * @return
 	 */
 	QmallResult reshelfItem(Long[] ids);
+
+	/**
+	 * Q:获取商品详细描述信息
+	 * @param itemId 商品Id
+	 * @return
+	 */
+	ItemDesc getItemDescById(long itemId);
 
 }

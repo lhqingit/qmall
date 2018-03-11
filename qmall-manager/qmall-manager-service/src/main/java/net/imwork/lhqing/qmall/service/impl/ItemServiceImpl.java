@@ -252,4 +252,10 @@ public class ItemServiceImpl implements ItemService {
 		return QmallResult.ok();
 	}
 
+	@Override
+	public ItemDesc getItemDescById(long itemId) {
+		ItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(itemId);
+		return itemDesc;
+	}
+
 }

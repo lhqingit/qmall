@@ -1,0 +1,23 @@
+package net.imwork.lhqing.qmall.item.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import net.imwork.lhqing.qmall.service.ItemService;
+
+@Controller()
+@RequestMapping("item")
+public class ItemDetailController {
+	
+	@Autowired
+	private ItemService ItemService;
+	
+	@RequestMapping("/{itemId}")
+	public String showItem(@PathVariable() long itemId, Model model) {
+		
+		return "item";
+	}
+}

@@ -1,0 +1,7 @@
+package net.imwork.lhqing.qmall.item.pojo;
+
+import net.imwork.lhqing.qmall.pojo.Item;
+
+public class ItemData extends Item {
+
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        				http://www.springframework.org/schema/mvc 
+        				http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+        				http://www.springframework.org/schema/context 
+        				http://www.springframework.org/schema/context/spring-context-4.2.xsd
+       					http://code.alibabatech.com/schema/dubbo 
+       					http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	<!-- 配置包扫描器,Q:扫描基本包及其子包 -->
+	<context:component-scan base-package="net.imwork.lhqing.qmall.item.controller"/>
+	<!-- Q:三大组件 -->
+	<!-- Q:配置注解形式的两大组件:处理器映射器、处理器适配器 -->
+	<mvc:annotation-driven/>
+	<!-- Q:配置视图解析器 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<!-- Q:此处不需要配置资源映射，
+			qmall.manager.web项目配置的/拦截路径形式，是拦截包括静态资源在内的所有资源 
+		         而本项目是通过拦截*.html的形式，不会拦截静态资源，因此也不需要再配置静态资源映射了-->
+	
+	<!-- 引用dubbo服务 -->
+	<dubbo:application name="qmall-item-web"/>
+	<!-- Q:配置注册中心相关信息 -->
+	<dubbo:registry protocol="zookeeper" address="192.168.25.129:2181"/>
+	<!-- Q:dubbo两边通信，接口就是一个规范 -->
+	<!-- <dubbo:reference id="contentService" 
+			interface="net.imwork.lhqing.qmall.content.service.ContentService"/>
+	 -->
+	<!-- Q:此处不需要再定义文件上传解析器，因为前台商城不需要上传文件功能 -->
+	
+	<!-- 加载图片服务器访问地址的配置文件，在类中使用时使用@Value注解 -->
+	<context:property-placeholder location="classpath:conf/resource.properties"/>
+</beans>
