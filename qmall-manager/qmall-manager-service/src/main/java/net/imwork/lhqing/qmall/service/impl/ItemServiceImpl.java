@@ -11,7 +11,9 @@ import javax.jms.Message;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
@@ -19,6 +21,7 @@ import org.springframework.stereotype.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
+import net.imwork.lhqing.qmall.common.jedis.JedisClient;
 import net.imwork.lhqing.qmall.common.pojo.EasyUIDataGridResult;
 import net.imwork.lhqing.qmall.common.pojo.QmallResult;
 import net.imwork.lhqing.qmall.common.utils.IDUtils;
@@ -51,13 +54,48 @@ public class ItemServiceImpl implements ItemService {
 	@Resource // Q:删除商品用到的topic
 	private Destination topicDestinationByDelete;
 
+	@Autowired
+	private JedisClient jedisClient;
+
+	//Q:商品redis缓存数据key的前缀
+	@Value("${REDIS_ITEM_PRE}")
+	private String REDIS_ITEM_PRE;
+	//Q:商品详情数据redis缓存时间
+	@Value("${ITEM_CACHE_EXPIRE}")
+	private Integer ITEM_CACHE_EXPIRE;
+
 	/**
 	 * 根据商品ID获取商品信息
 	 */
 	@Override
 	public Item getItemById(long itemId) {
+		//查询缓存
+		String key = REDIS_ITEM_PRE + ":" + itemId + ":BASE";
+		try {
+			String itemJsonStr = jedisClient.get(key);
+			if(StringUtils.isNotBlank(itemJsonStr)){
+				return JsonUtils.jsonToPojo(itemJsonStr, Item.class);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		//缓存中没有，查询数据库
+		
 		// 根据主键查询
 		Item item = itemMapper.selectByPrimaryKey(itemId);
+		
+		//把结果添加到缓存
+		try {
+			if(item != null){
+				jedisClient.set(key, JsonUtils.objectToJson(item));
+				//设置过期时间
+				jedisClient.expire(key, ITEM_CACHE_EXPIRE);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 		return item;
 	}
 
@@ -154,7 +192,7 @@ public class ItemServiceImpl implements ItemService {
 		itemDesc.setItemDesc(desc);
 		// 更新相关的商品描述信息
 		itemDescMapper.updateByPrimaryKeySelective(itemDesc);
-		
+
 		// Q:发送商品添加(更新)消息
 		jmsTemplate.send(topicDestination, new MessageCreator() {
 
@@ -164,10 +202,16 @@ public class ItemServiceImpl implements ItemService {
 				return textMessage;
 			}
 		});
+
+		// Q:删除redis中的商品缓存数据
+		this.deleteItemDetailCacheByRedis(item.getId());
+		
 		
 		// 返回成功信息
 		return QmallResult.ok();
 	}
+
+
 
 	/**
 	 * Q:根据商品Id集合删除商品
@@ -182,7 +226,7 @@ public class ItemServiceImpl implements ItemService {
 		ItemDescExample itemDescExample = new ItemDescExample();
 		itemDescExample.createCriteria().andItemIdIn(Arrays.asList(ids));
 		itemDescMapper.deleteByExample(itemDescExample);
-		
+
 		// Q:发送商品删除消息
 		jmsTemplate.send(topicDestinationByDelete, new MessageCreator() {
 
@@ -192,6 +236,11 @@ public class ItemServiceImpl implements ItemService {
 				return textMessage;
 			}
 		});
+
+		// Q:删除redis中的对应的商品缓存数据
+		for (Long itemId : ids) {
+			this.deleteItemDetailCacheByRedis(itemId);
+		}
 		
 		// 返回成功信息
 		return QmallResult.ok();
@@ -219,6 +268,12 @@ public class ItemServiceImpl implements ItemService {
 				return textMessage;
 			}
 		});
+		
+		// Q:删除redis中的对应的商品缓存数据
+		for (Long itemId : ids) {
+			this.deleteItemDetailCacheByRedis(itemId);
+		}
+		
 		return QmallResult.ok();
 	}
 
@@ -235,27 +290,71 @@ public class ItemServiceImpl implements ItemService {
 		// 商品状态，1-正常，2-下架(，3-删除)
 		item.setStatus((byte) 1);
 		itemMapper.updateByExampleSelective(item, itemExample);
-		
+
 		for (Long itemId : ids) {
 			// Q:发送商品添加(更新)消息
 			jmsTemplate.send(topicDestination, new MessageCreator() {
-				
+
 				@Override
 				public Message createMessage(Session session) throws JMSException {
 					TextMessage textMessage = session.createTextMessage(itemId.toString());
 					return textMessage;
 				}
 			});
-			
+
 		}
-		
+
 		return QmallResult.ok();
 	}
 
 	@Override
 	public ItemDesc getItemDescById(long itemId) {
+		//查询缓存
+		String key = REDIS_ITEM_PRE + ":" + itemId + ":DESC";
+		try {
+			String itemDescJsonStr = jedisClient.get(key);
+			if(StringUtils.isNotBlank(itemDescJsonStr)){
+				return JsonUtils.jsonToPojo(itemDescJsonStr, ItemDesc.class);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		//缓存中没有，查询数据库
+		
 		ItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(itemId);
+		
+		//把结果添加到缓存
+		try {
+			if(itemDesc != null){
+				jedisClient.set(key, JsonUtils.objectToJson(itemDesc));
+				//设置过期时间
+				jedisClient.expire(key, ITEM_CACHE_EXPIRE);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return itemDesc;
+	}
+	
+	
+	/**
+	 * Q:删除redis缓存的商品详情数据
+	 * @param itemId 
+	 */
+	private void deleteItemDetailCacheByRedis(Long itemId) {
+		try {
+			String baseKey = REDIS_ITEM_PRE + ":" + itemId + ":BASE";
+			String descKey = REDIS_ITEM_PRE + ":" + itemId + ":DESC";
+			//Q:商品信息
+			jedisClient.expire(baseKey, 0);
+			//Q:商品描述信息
+			jedisClient.expire(descKey, 0);
+		} catch (Exception e) {
+			//Q:redis失效也不能影响之前正常的逻辑
+			e.printStackTrace();
+		}
+		
 	}
 
 }

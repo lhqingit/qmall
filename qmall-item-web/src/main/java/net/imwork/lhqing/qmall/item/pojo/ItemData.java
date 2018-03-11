@@ -5,17 +5,20 @@ import net.imwork.lhqing.qmall.pojo.Item;
 public class ItemData extends Item {
 
 	public ItemData(Item item){
-		this.setId(item.getId());
-		this.setTitle(item.getTitle());
-		this.setSellPoint(item.getSellPoint());
-		this.setPrice(item.getPrice());
-		this.setNum(item.getNum());
-		this.setBarcode(item.getBarcode());
-		this.setImage(item.getImage());
-		this.setCid(item.getCid());
-		this.setStatus(item.getStatus());
-		this.setCreated(item.getCreated());
-		this.setUpdated(item.getUpdated());
+		if(item!=null){
+			this.setId(item.getId());
+			this.setTitle(item.getTitle());
+			this.setSellPoint(item.getSellPoint());
+			this.setPrice(item.getPrice());
+			this.setNum(item.getNum());
+			this.setBarcode(item.getBarcode());
+			this.setImage(item.getImage());
+			this.setCid(item.getCid());
+			this.setStatus(item.getStatus());
+			this.setCreated(item.getCreated());
+			this.setUpdated(item.getUpdated());
+		}
+		
 	}
 	
 	
