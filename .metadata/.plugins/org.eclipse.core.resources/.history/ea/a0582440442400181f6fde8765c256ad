@@ -1,9 +1,0 @@
-package net.imwork.lhqing.qmall.item.controller;
-
-import org.springframework.stereotype.Controller;
-
-@Controller("item")
-public class ItemDetailController {
-
-	public String 
-}
