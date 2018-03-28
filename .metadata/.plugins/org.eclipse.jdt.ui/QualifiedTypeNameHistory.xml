@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="redis.clients.jedis.JedisPool"/>
-<fullyQualifiedTypeName name="redis.clients.jedis.JedisCluster"/>
 <fullyQualifiedTypeName name="redis.clients.jedis.HostAndPort"/>
 <fullyQualifiedTypeName name="org.apache.solr.client.solrj.SolrServer"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.pojo.QmallResult"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
@@ -31,7 +28,6 @@
 <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-<fullyQualifiedTypeName name="javax.jms.TextMessage"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.search.server.SearchItemService"/>
 <fullyQualifiedTypeName name="org.springframework.jms.core.JmsTemplate"/>
 <fullyQualifiedTypeName name="javax.annotation.Resource"/>
@@ -41,12 +37,9 @@
 <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
 <fullyQualifiedTypeName name="com.mysql.fabric.xmlrpc.base.Array"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.pojo.ItemDesc"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.jedis.JedisClient"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.JsonUtils"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
@@ -54,10 +47,17 @@
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.service.ItemService"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="freemarker.template.Configuration"/>
-<fullyQualifiedTypeName name="java.io.FileWriter"/>
-<fullyQualifiedTypeName name="java.io.Writer"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.freemarker.Student"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="javax.jms.TextMessage"/>
+<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.item.pojo.ItemData"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.Writer"/>
 </qualifiedTypeNameHistroy>

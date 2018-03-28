@@ -37,7 +37,7 @@
   			那么默认去WEB-INF/[servlet-name]-servlet.xml加载springmvc的配置文件
   			比如在此处不配置的话，路径就是在WEB-INF/qmall-manager-servlet.xml-->
   		<param-name>contextConfigLocation</param-name>
-  		<param-value>classpath:spring/springmvc.xml</param-value>
+  		<param-value>classpath:spring/*.xml</param-value>
   	</init-param>
   	<load-on-startup>1</load-on-startup>
   </servlet>
