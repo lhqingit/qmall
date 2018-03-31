@@ -1,0 +1,10 @@
+package net.imwork.lhqing.qmall.sso.controller;
+
+/**
+ * 注册功能Controller
+ * @author lhq_i
+ *
+ */
+public class RegisterController {
+
+}

@@ -3,16 +3,13 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="net.imwork.lhqing"/>
+			<item value="lhqing.imwork.net"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="qmall-item-web"/>
+			<item value="qmall-sso-web"/>
 			<item value="qmall-parent"/>
-			<item value="qmall-search-web"/>
-			<item value="qmall-search-service"/>
-			<item value="qmall-search"/>
-			<item value="qmall-search-interface"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -69,6 +66,8 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="qmall-sso-service"/>
+			<item value="qmall-sso-interface"/>
 			<item value="qmall-search-service"/>
 			<item value="qmall-search-interface"/>
 			<item value="qmall-content-service"/>
@@ -90,8 +89,9 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\pom.xml"/>
+			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-parent"/>
 			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager-web\pom.xml"/>
+			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
