@@ -1,0 +1,14 @@
+package net.imwork.lhqing.qmall.sso.service.impl;
+
+import net.imwork.lhqing.qmall.common.pojo.QmallResult;
+import net.imwork.lhqing.qmall.sso.service.RegisterService;
+
+public class RegisterServiceImpl implements RegisterService {
+
+	@Override
+	public QmallResult checkData(String data, int type) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
