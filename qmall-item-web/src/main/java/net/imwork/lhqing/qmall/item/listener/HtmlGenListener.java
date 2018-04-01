@@ -72,20 +72,9 @@ public class HtmlGenListener implements MessageListener {
 			// 关闭流
 			out.close();
 			
-		} catch (JMSException e) {
-			e.printStackTrace();
-		} catch (TemplateNotFoundException e) {
-			e.printStackTrace();
-		} catch (MalformedTemplateNameException e) {
-			e.printStackTrace();
-		} catch (ParseException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (TemplateException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+		} catch (Exception e) {
+//			e.printStackTrace();
+			System.out.println("htmlGenListener.onMessage没有生成FreeMarker静态模板:"+e.getMessage());
 		}
 
 	}
