@@ -1,0 +1,23 @@
+package net.imwork.lhqing.qmall.sso.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+/**
+ * 用户登录处理Controller
+ * @author lhq_i
+ *
+ */
+@Controller
+public class LoginController {
+	@RequestMapping("/page/login")
+	public String showLogin(){
+		return "login";
+	}
+	
+	@RequestMapping("/user/login")
+	public String login(){
+		
+	}
+	
+}

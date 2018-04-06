@@ -33,6 +33,8 @@
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="net.imwork.lhqing.qmall.sso.service.RegisterService" 
 					ref="registerServiceImpl" timeout="300000"/>
+	<dubbo:service interface="net.imwork.lhqing.qmall.sso.service.LoginService" 
+					ref="loginServiceImpl" timeout="300000"/>
 	
 	
 	

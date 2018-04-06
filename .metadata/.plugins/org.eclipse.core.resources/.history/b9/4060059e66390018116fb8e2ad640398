@@ -1,0 +1,38 @@
+package net.imwork.lhqing.qmall.sso.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.util.DigestUtils;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import net.imwork.lhqing.qmall.common.pojo.QmallResult;
+import net.imwork.lhqing.qmall.sso.service.LoginService;
+
+/**
+ * 用户登录处理Controller
+ * 
+ * @author lhq_i
+ *
+ */
+@Controller
+public class LoginController {
+
+	@Autowired
+	private LoginService loginService;
+
+	@RequestMapping("/page/login")
+	public String showLogin() {
+		return "login";
+	}
+
+	@RequestMapping("/user/login")
+	public String login(String username, String password) {
+		String md5Password = DigestUtils.md5Digest(password.getBytes()).toString();
+		QmallResult qmallResult = loginService.userLogin(username, md5Password);
+		if (qmallResult.getStatus() == 200) {
+
+		}
+		return null;
+	}
+
+}

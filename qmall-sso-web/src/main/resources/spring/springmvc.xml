@@ -35,9 +35,11 @@
 	<!-- Q:dubbo两边通信，接口就是一个规范 -->
 	<dubbo:reference id="registerService" 
 			interface="net.imwork.lhqing.qmall.sso.service.RegisterService"/>
+	<dubbo:reference id="loginService" 
+			interface="net.imwork.lhqing.qmall.sso.service.LoginService"/>
 	
 	<!-- Q:此处不需要再定义文件上传解析器，因为前台商城不需要上传文件功能 -->
 	
-	<!-- 加载图片服务器访问地址的配置文件，在类中使用时使用@Value注解 -->
-	<!-- <context:property-placeholder location="classpath:conf/resource.properties"/> -->
+	<!-- 加载配置文件，在类中使用时使用@Value注解 -->
+	<context:property-placeholder location="classpath:conf/resource.properties"/>
 </beans>

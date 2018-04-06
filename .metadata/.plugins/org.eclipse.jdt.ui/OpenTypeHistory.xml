@@ -9,5 +9,5 @@
 <typeInfo handle="=qmall-content-service/E:\/Qing_java_software\/workspaces\/qmall_work\/repository\/org\/springframework\/spring-jms\/4.2.4.RELEASE\/spring-jms-4.2.4.RELEASE.jar&lt;org.springframework.jms.listener(DefaultMessageListenerContainer.class[DefaultMessageListenerContainer" modifiers="33" timestamp="1463390901321"/>
 <typeInfo handle="=qmall-manager-pojo/src\/main\/java&lt;net.imwork.lhqing.qmall.pojo{Item.java[Item" modifiers="1" timestamp="1518406274170"/>
 <typeInfo handle="=qmall-search-service/E:\/Qing_java_software\/workspaces\/qmall_work\/repository\/org\/apache\/activemq\/activemq-all\/5.11.2\/activemq-all-5.11.2.jar&lt;javax.jms(MessageListener.class[MessageListener" modifiers="1537" timestamp="1463412213137"/>
-<typeInfo handle="=qmall-sso-interface/src\/main\/java&lt;net.imwork.lhqing.qmall.sso.service{RegisterService.java[RegisterService" modifiers="513" timestamp="1522567824651"/>
+<typeInfo handle="=qmall-sso-interface/src\/main\/java&lt;net.imwork.lhqing.qmall.sso.service{RegisterService.java[RegisterService" modifiers="513" timestamp="1522577152663"/>
 </typeInfoHistroy>
