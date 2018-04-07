@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
- * Q商城自定义响应结构
+ * Q商城Json相关工具
  */
 public class JsonUtils {
 

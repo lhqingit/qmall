@@ -1,0 +1,5 @@
+package net.imwork.lhqing.qmall.sso.controller;
+
+public class TokenController {
+
+}

@@ -1,0 +1,13 @@
+package net.imwork.lhqing.qmall.sso.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * Token处理
+ * @author lhq_i
+ *
+ */
+@Controller
+public class TokenController {
+
+}

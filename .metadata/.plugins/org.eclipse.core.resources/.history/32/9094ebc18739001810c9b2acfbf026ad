@@ -1,0 +1,36 @@
+package net.imwork.lhqing.qmall.sso.service.impl;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+
+import net.imwork.lhqing.qmall.common.jedis.JedisClient;
+import net.imwork.lhqing.qmall.common.pojo.QmallResult;
+import net.imwork.lhqing.qmall.sso.service.TokenService;
+
+/**
+ * Token服务层实现类
+ * @author lhq_i
+ *
+ */
+public class TokenServiceImpl implements TokenService{
+	
+	@Autowired
+	private JedisClient jedisClient;
+	
+	@Value("${SESSION_EXPIRE}")
+	private int SESSION_EXPIRE;
+
+	@Override
+	public QmallResult getUserByToken(String token) {
+		String userJson = jedisClient.get(token);
+		if(StringUtils.isBlank(userJson)){
+			return QmallResult.build(210, "token不存在或已过期");
+		}
+		
+		jedisClient.expire(token, SESSION_EXPIRE);
+		
+		return null;
+	}
+
+}

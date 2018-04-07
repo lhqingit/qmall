@@ -37,6 +37,8 @@
 			interface="net.imwork.lhqing.qmall.sso.service.RegisterService"/>
 	<dubbo:reference id="loginService" 
 			interface="net.imwork.lhqing.qmall.sso.service.LoginService"/>
+	<dubbo:reference id="tokenService" 
+			interface="net.imwork.lhqing.qmall.sso.service.TokenService"/>
 	
 	<!-- Q:此处不需要再定义文件上传解析器，因为前台商城不需要上传文件功能 -->
 	

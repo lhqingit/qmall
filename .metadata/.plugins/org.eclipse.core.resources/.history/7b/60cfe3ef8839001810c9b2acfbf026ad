@@ -1,0 +1,26 @@
+package net.imwork.lhqing.qmall.sso.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import net.imwork.lhqing.qmall.common.pojo.QmallResult;
+import net.imwork.lhqing.qmall.sso.service.TokenService;
+
+/**
+ * Token处理
+ * 
+ * @author lhq_i
+ *
+ */
+@Controller
+public class TokenController {
+
+	@Autowired
+	private TokenService tokenService;
+
+	public QmallResult getUserByToken(String tokenContent){
+		QmallResult qmallResult = tokenService.getUserByToken("SESSION:"+tokenContent);
+		return qmallResult;
+	}
+
+}

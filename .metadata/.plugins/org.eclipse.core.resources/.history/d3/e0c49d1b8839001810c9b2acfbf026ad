@@ -1,0 +1,10 @@
+package net.imwork.lhqing.qmall.sso.controller;
+
+/**
+ * Token处理
+ * @author lhq_i
+ *
+ */
+public class TokenController {
+
+}
