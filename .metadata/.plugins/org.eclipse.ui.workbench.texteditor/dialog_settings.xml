@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="request" key="selection"/>
+		<item value="cart" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="item"/>
 			<item value="request"/>
 			<item value="response"/>
 			<item value="servlet"/>
@@ -15,9 +16,9 @@
 			<item value="pro"/>
 			<item value="servl"/>
 			<item value="serv"/>
-			<item value="/page/login"/>
 		</list>
 		<list key="replacehistory">
+			<item value="cart"/>
 			<item value="\\"/>
 			<item value="/"/>
 			<item value="qmall-item-web"/>
@@ -30,7 +31,7 @@
 		<item value="300" key="DIALOG_WIDTH"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 		<item value="410" key="DIALOG_HEIGHT"/>
-		<item value="119" key="DIALOG_X_ORIGIN"/>
-		<item value="301" key="DIALOG_Y_ORIGIN"/>
+		<item value="432" key="DIALOG_X_ORIGIN"/>
+		<item value="181" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
