@@ -20,7 +20,6 @@
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.io.Writer"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.sso.service.RegisterService"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.sso.service.LoginServer"/>
@@ -31,20 +30,16 @@
 <fullyQualifiedTypeName name="com.taotao.common.utils.CookieUtils"/>
 <fullyQualifiedTypeName name="org.jboss.netty.handler.codec.http.HttpRequest"/>
 <fullyQualifiedTypeName name="com.alibaba.dubbo.remoting.http.HttpServer"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="org.springframework.util.DigestUtils"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.jedis.JedisClient"/>
 <fullyQualifiedTypeName name="com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion.User"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.sso.service.TokenService"/>
-<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.pojo.QmallResult"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.pojo.User"/>
 <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
 <fullyQualifiedTypeName name="org.springframework.http.converter.json.MappingJacksonValue"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="java.util.List"/>
@@ -57,7 +52,12 @@
 <fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.utils.JsonUtils"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="net.imwork.lhqing.qmall.common.pojo.QmallResult"/>
 </qualifiedTypeNameHistroy>

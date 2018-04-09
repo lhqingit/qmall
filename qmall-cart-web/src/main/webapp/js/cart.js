@@ -25,7 +25,7 @@ var CART = {
 		});*/
 	},
 	refreshTotalPrice : function(){ //重新计算总价
-		var total = 0;
+		/*var total = 0;
 		$(".itemnum").each(function(i,e){
 			var _this = $(e);
 			total += (eval(_this.attr("itemPrice")) * 10000 * eval(_this.val())) / 10000;
@@ -34,7 +34,9 @@ var CART = {
 			 prefix: '¥',
 			 thousandsSeparator: ',',
 			 centsLimit: 2
-		});
+		});*/
+		//Q:上面的方法没有刷新商品对应的小计，使用下面的方法刷新界面
+		location.reload();
 	}
 };
 
