@@ -7,7 +7,7 @@
       	<span id="loginbar" style="margin-right: 15px;">
 	      	<a href="http://localhost:8088/page/login">请登录</a>
       	</span>
-      	<a href="http://localhost:8088/page/register">免费注册</a>
+      	<a href="https://localhost:8088/page/register">免费注册</a>
       </li>
       <!--<li id='qiyeLogin'><a href='http://www.sfme.me/login.jhtml' target='_blank' rel='nofollow'>员工福利</a></li>-->
       <li class="myOrder"><a name="sfbest_hp_hp_head_OrderList" class="trackref" href="http://home.e3mall.cn/myorder/index/" rel="nofollow">我的订单</a></li>

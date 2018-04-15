@@ -10,4 +10,6 @@
 <typeInfo handle="=qmall-manager-pojo/src\/main\/java&lt;net.imwork.lhqing.qmall.pojo{Item.java[Item" modifiers="1" timestamp="1518406274170"/>
 <typeInfo handle="=qmall-search-service/E:\/Qing_java_software\/workspaces\/qmall_work\/repository\/org\/apache\/activemq\/activemq-all\/5.11.2\/activemq-all-5.11.2.jar&lt;javax.jms(MessageListener.class[MessageListener" modifiers="1537" timestamp="1463412213137"/>
 <typeInfo handle="=qmall-sso-interface/src\/main\/java&lt;net.imwork.lhqing.qmall.sso.service{RegisterService.java[RegisterService" modifiers="513" timestamp="1522577152663"/>
+<typeInfo handle="=qmall-cart-web/E:\/Qing_java_software\/workspaces\/qmall_work\/repository\/org\/springframework\/spring-webmvc\/4.2.4.RELEASE\/spring-webmvc-4.2.4.RELEASE.jar&lt;org.springframework.web.servlet(HandlerInterceptor.class[HandlerInterceptor" modifiers="1537" timestamp="1463390358142"/>
+<typeInfo handle="=qmall-cart-interface/src\/main\/java&lt;net.imwork.lhqing.qmall.cart.service{CartService.java[CartService" modifiers="513" timestamp="1523775894593"/>
 </typeInfoHistroy>

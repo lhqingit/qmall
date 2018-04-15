@@ -1,0 +1,47 @@
+package net.imwork.lhqing.qmall.cart.interceptor;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.ModelAndView;
+
+import net.imwork.lhqing.qmall.pojo.Item;
+
+public class LoginInterceptor implements HandlerInterceptor {
+	
+	@Override
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+		//前处理，执行Handler之前执行此方法
+		//返回true:放行   false:拦截
+		//1.从cookie中取token
+				
+		//2.
+		//3.
+		//4.
+		//5.
+		//6.
+
+		
+		
+		return false;
+	}
+
+	@Override
+	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)
+			throws Exception {
+		// Handler执行之后，返回ModelAndView之前
+
+	}
+
+	@Override
+	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
+			throws Exception {
+		// 完成处理，返回ModelAndView之后
+		// 可以在此处处理异常
+		
+	}
+
+}

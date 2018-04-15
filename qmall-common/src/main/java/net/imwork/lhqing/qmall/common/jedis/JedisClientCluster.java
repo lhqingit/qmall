@@ -1,6 +1,6 @@
 package net.imwork.lhqing.qmall.common.jedis;
 
-
+import java.util.List;
 
 import redis.clients.jedis.JedisCluster;
 
@@ -8,6 +8,7 @@ public class JedisClientCluster implements JedisClient {
 	
 	private JedisCluster jedisCluster;
 	
+
 	public JedisCluster getJedisCluster() {
 		return jedisCluster;
 	}
@@ -59,6 +60,21 @@ public class JedisClientCluster implements JedisClient {
 	@Override
 	public Long hdel(String key, String... field) {
 		return jedisCluster.hdel(key, field);
+	}
+
+	@Override
+	public Boolean hexists(String key, String field) {
+		return jedisCluster.hexists(key, field);
+	}
+
+	@Override
+	public List<String> hvals(String key) {
+		return jedisCluster.hvals(key);
+	}
+
+	@Override
+	public Long del(String key) {
+		return jedisCluster.del(key);
 	}
 
 }

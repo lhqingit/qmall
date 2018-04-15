@@ -1,7 +1,0 @@
-package net.imwork.lhqing.qmall.sso.service;
-
-import net.imwork.lhqing.qmall.common.pojo.QmallResult;
-
-public interface TokenService {
-	QmallResult getUserByToken();
-}
