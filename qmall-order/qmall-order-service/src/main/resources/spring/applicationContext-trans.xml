@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-4.2.xsd
+						http://www.springframework.org/schema/aop 
+						http://www.springframework.org/schema/aop/spring-aop-4.2.xsd 
+						http://www.springframework.org/schema/tx 
+						http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+						http://www.springframework.org/schema/util 
+						http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+	
+	<!-- 事务管理器,Q:由spring进行管理 -->
+	<bean id="transactionManager" 
+					class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<!-- 数据源，ref="dataSource"所引用的数据源id在该文件同目录下的applicationContext-dao.xml中进行定义 -->
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<!-- 通知 -->
+	<!-- Q:transaction-manager="transactionManager"中引用的是上面的事务管理器的id -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<!-- 传播行为 Q:规定了事务方法和事务方法发生嵌套调用时事务如何进行传播 详细网址见有道云笔记 .../day01
+				PROPAGATION_REQUIRED 如果当前没有事务，就新建一个事务，
+									  如果已经存在一个事务中，加入到这个事务中。这是最常见的选择。
+				PROPAGATION_SUPPORTS 支持当前事务，如果当前没有事务，就以非事务方式执行。
+			-->
+			<tx:method name="save*" propagation="REQUIRED"/>
+			<tx:method name="insert*" propagation="REQUIRED"/>
+			<tx:method name="add*" propagation="REQUIRED"/>
+			<tx:method name="create*" propagation="REQUIRED"/>
+			<tx:method name="delete*" propagation="REQUIRED"/>
+			<tx:method name="update*" propagation="REQUIRED"/>
+			<tx:method name="find*" propagation="SUPPORTS" read-only="true"/>
+			<tx:method name="selete*" propagation="SUPPORTS" read-only="true"/>
+			<tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
+		</tx:attributes>
+	</tx:advice>
+	
+	<!-- 切面 -->
+	<!-- Q:advice-ref="txAdvice"中引用的txAdvice是上面的通知的id 
+		注意.service..*.*(..))中service后面两个点才代表可以扫描子包，如果只有一个点则不扫描子包
+	-->
+	<aop:config>
+		<aop:advisor advice-ref="txAdvice" 
+					pointcut="execution(* net.imwork.lhqing.qmall.order.service..*.*(..))"/>
+	</aop:config>
+	
+	
+	
+	
+</beans>

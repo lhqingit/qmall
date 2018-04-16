@@ -7,8 +7,12 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="qmall-cart-web"/>
+			<item value="qmall-order-web"/>
 			<item value="qmall-parent"/>
+			<item value="qmall-order-service"/>
+			<item value="qmall-order"/>
+			<item value="qmall-order-interface"/>
+			<item value="qmall-cart-web"/>
 			<item value="qmall-cart-service"/>
 			<item value="qmall-cart"/>
 			<item value="qmall-cart-interface"/>
@@ -68,6 +72,8 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="qmall-order-service"/>
+			<item value="qmall-order-interface"/>
 			<item value="qmall-cart-service"/>
 			<item value="qmall-cart-interface"/>
 			<item value="qmall-sso-service"/>
@@ -93,6 +99,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-order"/>
 			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-cart"/>
 			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-parent"/>
 			<item value="E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager-web\pom.xml"/>
