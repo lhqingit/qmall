@@ -3,13 +3,17 @@ package net.imwork.lhqing.qmall.sso.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+
 
 import net.imwork.lhqing.qmall.common.pojo.QmallResult;
 import net.imwork.lhqing.qmall.common.utils.CookieUtils;
@@ -36,7 +40,8 @@ public class LoginController {
 	 * @return
 	 */
 	@RequestMapping("/page/login")
-	public String showLogin() {
+	public String showLogin(String redirect, Model model) {
+		model.addAttribute("redirect",redirect);
 		return "login";
 	}
 

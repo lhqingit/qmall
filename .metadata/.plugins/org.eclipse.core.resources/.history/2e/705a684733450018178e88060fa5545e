@@ -1,0 +1,3 @@
+COOKIES_KEY=qmallToken
+CART_COOKIES_KEY=cart
+SSO_URL=http://localhost:8088

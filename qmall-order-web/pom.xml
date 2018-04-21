@@ -17,6 +17,16 @@
 	    <artifactId>qmall-order-interface</artifactId>
 	    <version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	<dependency>
+  		<groupId>net.imwork.lhqing</groupId>
+	    <artifactId>qmall-cart-interface</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>net.imwork.lhqing</groupId>
+	    <artifactId>qmall-sso-interface</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   	<!-- Spring -->
 	<dependency>
 		<groupId>org.springframework</groupId>
