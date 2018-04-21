@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from project &apos;qmall-content-service&apos;&#x0D;&#x0A;- Original project: &apos;qmall-content-service&apos;&#x0D;&#x0A;- Original element: &apos;qmall-content-service/src/main/java/net.imwork.lhqing.qmall.content.service&apos;&#x0D;&#x0A;- Delete subpackages" description="Delete element" element1="/src\/main\/java&lt;net.imwork.lhqing.qmall.content.service.impl" element2="/src\/main\/java&lt;net.imwork.lhqing.qmall.content.service" element3="/src\/main\/java&lt;net.imwork.lhqing.qmall.content" element4="/src\/main\/java&lt;net.imwork.lhqing.qmall" element5="/src\/main\/java&lt;net.imwork.lhqing" element6="/src\/main\/java&lt;net.imwork" element7="/src\/main\/java&lt;net" elements="7" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1517749490624" subPackages="true" version="1.0"/>
-</session>

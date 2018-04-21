@@ -1,5 +1,0 @@
-package net.imwork.lhqing.qmall.content.service;
-
-public interface ContentService {
-
-}

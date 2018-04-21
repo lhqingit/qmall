@@ -1,7 +1,0 @@
-package net.imwork.lhqing.qmall.cart.service;
-
-import net.imwork.lhqing.qmall.common.pojo.QmallResult;
-
-public interface CartService {
-	QmallResult addCart(long userId, long itemId);
-}
