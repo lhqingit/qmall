@@ -112,4 +112,11 @@ public class CartServiceImpl implements CartService {
 		return QmallResult.ok();
 	}
 
+	@Override
+	public QmallResult clearCartItem(long userId) {
+		//清空购物车商品
+		jedisClient.del(REDIS_CART_PRE + ":" + userId);
+		return QmallResult.ok();
+	}
+
 }

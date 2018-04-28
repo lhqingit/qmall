@@ -114,7 +114,7 @@
     </if>
   </delete>
   <insert id="insert" parameterType="net.imwork.lhqing.qmall.pojo.Order" >
-    insert into order (order_id, payment, payment_type, 
+    insert into tb_order (order_id, payment, payment_type, 
       post_fee, status, create_time, 
       update_time, payment_time, consign_time, 
       end_time, close_time, shipping_name, 
@@ -128,7 +128,7 @@
       #{buyerNick,jdbcType=VARCHAR}, #{buyerRate,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="net.imwork.lhqing.qmall.pojo.Order" >
-    insert into order
+    insert into tb_order
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="orderId != null" >
         order_id,
