@@ -30,8 +30,11 @@
 			<groupId>org.apache.tomcat.maven</groupId>
 			<artifactId>tomcat7-maven-plugin</artifactId>
 			<configuration>
-				<path>/</path>
+				<path>/qmall-order</path>
 				<port>8091</port>
+				<url>http://192.168.25.134:8080/manager/text</url>
+				<username>tomcat</username>
+				<password>tomcat</password>
 			</configuration>
   		</plugin>
   	</plugins>

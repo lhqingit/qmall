@@ -34,6 +34,7 @@
   </modules>
   
   <!-- 配置tomcat插件 -->
+  
   <build>
   	<plugins>
   		<plugin>
@@ -44,8 +45,11 @@
 			 -->
 			<!-- Q:配置访问路径和端口号 -->
 			<configuration>
-				<path>/</path>
+				<path>/qmall-manager</path>
 				<port>8080</port>
+				<url>http://192.168.25.134:8080/manager/text</url>
+				<username>tomcat</username>
+				<password>tomcat</password>
 			</configuration>
   		</plugin>
   	</plugins>

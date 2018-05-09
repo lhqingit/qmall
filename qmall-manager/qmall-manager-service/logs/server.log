@@ -1,0 +1,332 @@
+
+
+[INFO ] 2018-05-01 21:28:16,179 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4d50efb8: startup date [Tue May 01 21:28:16 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-05-01 21:28:16,239 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\spring\applicationContext-activemq.xml]
+
+
+[INFO ] 2018-05-01 21:28:16,375 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2018-05-01 21:28:16,445 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\spring\applicationContext-redis.xml]
+
+
+[INFO ] 2018-05-01 21:28:16,468 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2018-05-01 21:28:16,669 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-05-01 21:28:16,698 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2018-05-01 21:28:16,979 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\conf\db.properties]
+
+
+[INFO ] 2018-05-01 21:28:16,980 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\conf\resources.properties]
+
+
+[INFO ] 2018-05-01 21:28:18,704 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: net.imwork.lhqing.qmall.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:18,845 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service net.imwork.lhqing.qmall.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:18,845 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service net.imwork.lhqing.qmall.service.ItemService to url dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:18,846 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service net.imwork.lhqing.qmall.service.ItemService url dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726 to registry registry://192.168.25.129:2181/com.alibaba.dubbo.registry.RegistryService?application=qmall-manager&dubbo=2.5.3&pid=9744&registry=zookeeper&timestamp=1525181298717, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,235 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.25.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,257 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\lhq_i\.dubbo\dubbo-registry-192.168.25.129.cache, data: {net.imwork.lhqing.qmall.content.service.ContentCategoryService=empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentCategoryService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1525177632720 empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentCategoryService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=2876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1525177632720 dubbo://192.168.25.1:20881/net.imwork.lhqing.qmall.content.service.ContentCategoryService?anyhost=true&application=qmall-content&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentCategoryService&methods=addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=5492&side=provider&timeout=300000&timestamp=1525177576629, net.imwork.lhqing.qmall.sso.service.LoginService=empty://192.168.25.1/net.imwork.lhqing.qmall.sso.service.LoginService?application=qmall-sso-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.sso.service.LoginService&methods=userLogin&pid=1676&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921190217 empty://192.168.25.1/net.imwork.lhqing.qmall.sso.service.LoginService?application=qmall-sso-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.sso.service.LoginService&methods=userLogin&pid=1676&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921190217 dubbo://192.168.25.1:20883/net.imwork.lhqing.qmall.sso.service.LoginService?anyhost=true&application=qmall-sso&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.sso.service.LoginService&methods=userLogin&pid=8816&side=provider&timeout=300000&timestamp=1524921083204, net.imwork.lhqing.qmall.search.server.SearchService=empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=11276&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921176391 empty://192.168.25.1/net.imwork.lhqing.qmall.search.server.SearchService?application=qmall-search-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=11276&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921176391 dubbo://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchService?anyhost=true&application=qmall-search&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchService&methods=search&pid=12100&side=provider&timeout=300000&timestamp=1524921105290, net.imwork.lhqing.qmall.sso.service.TokenService=empty://192.168.25.1/net.imwork.lhqing.qmall.sso.service.TokenService?application=qmall-cart-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.sso.service.TokenService&methods=getUserByToken&pid=9816&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921488862 empty://192.168.25.1/net.imwork.lhqing.qmall.sso.service.TokenService?application=qmall-cart-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.sso.service.TokenService&methods=getUserByToken&pid=9816&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921488862 dubbo://192.168.25.1:20883/net.imwork.lhqing.qmall.sso.service.TokenService?anyhost=true&application=qmall-sso&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.sso.service.TokenService&methods=getUserByToken&pid=8816&side=provider&timeout=300000&timestamp=1524921083338, net.imwork.lhqing.qmall.cart.service.CartService=empty://192.168.25.1/net.imwork.lhqing.qmall.cart.service.CartService?application=qmall-cart-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.cart.service.CartService&methods=addCart,mergeCart,updateCartNum,deleteCartItem,getCartList,clearCartItem&pid=9816&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921488656 empty://192.168.25.1/net.imwork.lhqing.qmall.cart.service.CartService?application=qmall-cart-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.cart.service.CartService&methods=addCart,mergeCart,updateCartNum,deleteCartItem,getCartList,clearCartItem&pid=9816&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921488656 dubbo://192.168.25.1:20884/net.imwork.lhqing.qmall.cart.service.CartService?anyhost=true&application=qmall-cart&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.cart.service.CartService&methods=addCart,mergeCart,updateCartNum,clearCartItem,deleteCartItem,getCartList&pid=10996&side=provider&timeout=300000&timestamp=1524921056839, net.imwork.lhqing.qmall.order.service.OrderService=empty://192.168.25.1/net.imwork.lhqing.qmall.order.service.OrderService?application=qmall-order-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.order.service.OrderService&methods=createOrder&pid=10484&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921182626 empty://192.168.25.1/net.imwork.lhqing.qmall.order.service.OrderService?application=qmall-order-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.order.service.OrderService&methods=createOrder&pid=10484&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921182626 dubbo://192.168.25.1:20885/net.imwork.lhqing.qmall.order.service.OrderService?anyhost=true&application=qmall-order&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.order.service.OrderService&methods=createOrder&pid=6852&side=provider&timeout=300000&timestamp=1524921076169, net.imwork.lhqing.qmall.sso.service.RegisterService=empty://192.168.25.1/net.imwork.lhqing.qmall.sso.service.RegisterService?application=qmall-sso-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.sso.service.RegisterService&methods=checkData,register&pid=1676&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921190840 empty://192.168.25.1/net.imwork.lhqing.qmall.sso.service.RegisterService?application=qmall-sso-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.sso.service.RegisterService&methods=checkData,register&pid=1676&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921190840 dubbo://192.168.25.1:20883/net.imwork.lhqing.qmall.sso.service.RegisterService?anyhost=true&application=qmall-sso&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.sso.service.RegisterService&methods=checkData,register&pid=8816&side=provider&timeout=300000&timestamp=1524921070853, on=qmall-item-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=6136&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524918437689=dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=11132&side=provider&timeout=300000&timestamp=1524918379351, net.imwork.lhqing.qmall.content.service.ContentService=empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentList,getContentListByCid,updateContent,addContent,deleteContent&pid=2876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1525177632909 empty://192.168.25.1/net.imwork.lhqing.qmall.content.service.ContentService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentList,getContentListByCid,updateContent,addContent,deleteContent&pid=2876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1525177632909 dubbo://192.168.25.1:20881/net.imwork.lhqing.qmall.content.service.ContentService?anyhost=true&application=qmall-content&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.content.service.ContentService&methods=getContentList,getContentListByCid,deleteContent,updateContent,addContent&pid=5492&side=provider&timeout=300000&timestamp=1525177577208, net.imwork.lhqing.qmall.service.ItemCatService=empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemCatService?application=qmall-manager-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=2876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1525177632985 empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemCatService?application=qmall-manager-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=2876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1525177632985 empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemCatService?application=qmall-manager-web&category=providers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=2876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1525177632985, net.imwork.lhqing.qmall.search.server.SearchItemService=empty://192.168.25.1:20882/net.imwork.lhqing.qmall.search.server.SearchItemService?anyhost=true&application=qmall-search&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.search.server.SearchItemService&methods=importAllItems&pid=12100&side=provider&timeout=300000&timestamp=1524921104799, net.imwork.lhqing.qmall.service.ItemService=empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemService?application=qmall-cart-web&category=configurators&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9816&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921488137 empty://192.168.25.1/net.imwork.lhqing.qmall.service.ItemService?application=qmall-cart-web&category=routers&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9816&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524921488137 dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=11060&side=provider&timeout=300000&timestamp=1524921096001}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,280 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-05-01 21:28:19,293 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-05-01 21:28:19,294 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-266LMM1
+
+
+[INFO ] 2018-05-01 21:28:19,295 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_144
+
+
+[INFO ] 2018-05-01 21:28:19,295 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-05-01 21:28:19,295 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=E:\Qing_java_software\install\Java\jdk1.8.0_144\jre
+
+
+[INFO ] 2018-05-01 21:28:19,296 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\test-classes;E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes;E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-dao\target\qmall-manager-dao.jar;E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-pojo\target\qmall-manager-pojo.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\mybatis\mybatis-spring\1.2.2\mybatis-spring-1.2.2.jar;E:\Qing_java_software\workspaces\qmall_work\repository\com\github\miemiedev\mybatis-paginator\1.2.15\mybatis-paginator-1.2.15.jar;E:\Qing_java_software\workspaces\qmall_work\repository\com\github\pagehelper\pagehelper\3.4.2-fix\pagehelper-3.4.2-fix.jar;E:\Qing_java_software\workspaces\qmall_work\repository\com\github\jsqlparser\jsqlparser\0.9\jsqlparser-0.9.jar;E:\Qing_java_software\workspaces\qmall_work\repository\junit\junit\4.12\junit-4.12.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\Qing_java_software\workspaces\qmall_work\repository\mysql\mysql-connector-java\5.1.32\mysql-connector-java-5.1.32.jar;E:\Qing_java_software\workspaces\qmall_work\repository\com\alibaba\druid\1.0.9\druid-1.0.9.jar;E:\Qing_java_software\install\Java\jdk1.8.0_144\jre\..\lib\jconsole.jar;E:\Qing_java_software\install\Java\jdk1.8.0_144\jre\..\lib\tools.jar;E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-interface\target\qmall-manager-interface.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-context\4.2.4.RELEASE\spring-context-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-aop\4.2.4.RELEASE\spring-aop-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-core\4.2.4.RELEASE\spring-core-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-expression\4.2.4.RELEASE\spring-expression-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-beans\4.2.4.RELEASE\spring-beans-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-webmvc\4.2.4.RELEASE\spring-webmvc-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-web\4.2.4.RELEASE\spring-web-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-jdbc\4.2.4.RELEASE\spring-jdbc-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-tx\4.2.4.RELEASE\spring-tx-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-aspects\4.2.4.RELEASE\spring-aspects-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\aspectj\aspectjweaver\1.8.7\aspectjweaver-1.8.7.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-jms\4.2.4.RELEASE\spring-jms-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-messaging\4.2.4.RELEASE\spring-messaging-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\springframework\spring-context-support\4.2.4.RELEASE\spring-context-support-4.2.4.RELEASE.jar;E:\Qing_java_software\workspaces\qmall_work\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\apache\zookeeper\zookeeper\3.4.7\zookeeper-3.4.7.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\slf4j\slf4j-log4j12\1.6.4\slf4j-log4j12-1.6.4.jar;E:\Qing_java_software\workspaces\qmall_work\repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;E:\Qing_java_software\workspaces\qmall_work\repository\jline\jline\0.9.94\jline-0.9.94.jar;E:\Qing_java_software\workspaces\qmall_work\repository\io\netty\netty\3.7.0.Final\netty-3.7.0.Final.jar;E:\Qing_java_software\workspaces\qmall_work\repository\com\github\sgroschupf\zkclient\0.1\zkclient-0.1.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\apache\activemq\activemq-all\5.11.2\activemq-all-5.11.2.jar;E:\Qing_java_software\workspaces\qmall_work\repository\net\imwork\lhqing\qmall-common\0.0.1-SNAPSHOT\qmall-common-0.0.1-SNAPSHOT.jar;E:\Qing_java_software\workspaces\qmall_work\repository\joda-time\joda-time\2.5\joda-time-2.5.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;E:\Qing_java_software\workspaces\qmall_work\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar;E:\Qing_java_software\workspaces\qmall_work\repository\commons-net\commons-net\3.3\commons-net-3.3.jar;E:\Qing_java_software\workspaces\qmall_work\repository\com\fasterxml\jackson\core\jackson-databind\2.4.2\jackson-databind-2.4.2.jar;E:\Qing_java_software\workspaces\qmall_work\repository\com\fasterxml\jackson\core\jackson-annotations\2.4.0\jackson-annotations-2.4.0.jar;E:\Qing_java_software\workspaces\qmall_work\repository\com\fasterxml\jackson\core\jackson-core\2.4.2\jackson-core-2.4.2.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\quartz-scheduler\quartz\2.2.2\quartz-2.2.2.jar;E:\Qing_java_software\workspaces\qmall_work\repository\c3p0\c3p0\0.9.1.1\c3p0-0.9.1.1.jar;E:\Qing_java_software\workspaces\qmall_work\repository\fastdfs_client\fastdfs_client\1.25\fastdfs_client-1.25.jar;E:\Qing_java_software\workspaces\qmall_work\repository\redis\clients\jedis\2.7.2\jedis-2.7.2.jar;E:\Qing_java_software\workspaces\qmall_work\repository\org\apache\commons\commons-pool2\2.3\commons-pool2-2.3.jar;
+
+
+[INFO ] 2018-05-01 21:28:19,297 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=E:\Qing_java_software\install\Java\jdk1.8.0_144\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/bin/server;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/bin;E:/Qing_java_software/install/Java/jdk1.8.0_144/bin/../jre/lib/amd64;E:\Qing_java_software\install_free\apache-maven-3.3.9\bin;E:\Qing_java_software\install\Java\jdk1.8.0_144\bin;E:\Qing_java_software\install\Java\jdk1.8.0_144\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;E:\Qing_java_software\install\MySQL\MySQL Server 5.5\bin;E:\Qing_java_software\install\nodejs\;E:\Qing_java_software\install\SSH Secure Shell;C:\Users\lhq_i\AppData\Roaming\npm;E:\Qing_java_software\workspaces\qmall_work\eclipse;;.
+
+
+[INFO ] 2018-05-01 21:28:19,297 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\lhq_i\AppData\Local\Temp\
+
+
+[INFO ] 2018-05-01 21:28:19,298 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-05-01 21:28:19,298 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-05-01 21:28:19,298 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-05-01 21:28:19,298 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-05-01 21:28:19,299 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=lhq_i
+
+
+[INFO ] 2018-05-01 21:28:19,299 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\lhq_i
+
+
+[INFO ] 2018-05-01 21:28:19,299 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service
+
+
+[INFO ] 2018-05-01 21:28:19,301 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.129:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@600b0b7
+
+
+[INFO ] 2018-05-01 21:28:19,333 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.129/192.168.25.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-05-01 21:28:19,335 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.129/192.168.25.129:2181, initiating session
+
+
+[INFO ] 2018-05-01 21:28:19,357 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.129/192.168.25.129:2181, sessionid = 0x1610e55653b0003, negotiated timeout = 30000
+
+
+[INFO ] 2018-05-01 21:28:19,360 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-05-01 21:28:19,363 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,397 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,421 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726, urls: [empty://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,492 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: net.imwork.lhqing.qmall.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,514 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service net.imwork.lhqing.qmall.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,514 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service net.imwork.lhqing.qmall.service.ItemCatService to url dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,515 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service net.imwork.lhqing.qmall.service.ItemCatService url dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507 to registry registry://192.168.25.129:2181/com.alibaba.dubbo.registry.RegistryService?application=qmall-manager&dubbo=2.5.3&pid=9744&registry=zookeeper&timestamp=1525181299506, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,516 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,528 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:28:19,539 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507, urls: [empty://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:29:07,542 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4d50efb8: startup date [Tue May 01 21:29:07 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-05-01 21:29:07,590 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\spring\applicationContext-activemq.xml]
+
+
+[INFO ] 2018-05-01 21:29:07,715 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2018-05-01 21:29:07,770 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\spring\applicationContext-redis.xml]
+
+
+[INFO ] 2018-05-01 21:29:07,792 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2018-05-01 21:29:07,917 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-05-01 21:29:07,947 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2018-05-01 21:29:08,235 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\conf\db.properties]
+
+
+[INFO ] 2018-05-01 21:29:08,235 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [E:\Qing_java_software\workspaces\qmall_work\eclipse_qmall_workspace\qmall-manager\qmall-manager-service\target\classes\conf\resources.properties]
+
+
+[INFO ] 2018-05-01 21:29:10,069 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: net.imwork.lhqing.qmall.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:29:10,214 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service net.imwork.lhqing.qmall.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:29:10,215 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service net.imwork.lhqing.qmall.service.ItemService to url dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=5756&revision=interface&side=provider&timeout=300000&timestamp=1525181350088, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:29:10,216 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service net.imwork.lhqing.qmall.service.ItemService url dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=5756&revision=interface&side=provider&timeout=300000&timestamp=1525181350088 to registry registry://192.168.25.129:2181/com.alibaba.dubbo.registry.RegistryService?application=qmall-manager&dubbo=2.5.3&pid=5756&registry=zookeeper&timestamp=1525181350080, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:29:10,639 method:com.alibaba.dubbo.config.AbstractConfig$1.run(AbstractConfig.java:450)
+ [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:29:10,641 method:com.alibaba.dubbo.registry.support.AbstractRegistryFactory.destroyAll(AbstractRegistryFactory.java:63)
+ [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:29:10,649 method:com.alibaba.dubbo.rpc.protocol.AbstractProtocol.destroy(AbstractProtocol.java:76)
+ [DUBBO] Unexport service: dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=5756&revision=interface&side=provider&timeout=300000&timestamp=1525181350088, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:29:10,652 method:com.alibaba.dubbo.rpc.protocol.AbstractProtocol.destroy(AbstractProtocol.java:76)
+ [DUBBO] Unexport service: injvm://127.0.0.1/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=5756&revision=interface&side=provider&timeout=300000&timestamp=1525181350088, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,390 method:com.alibaba.dubbo.config.AbstractConfig$1.run(AbstractConfig.java:450)
+ [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,391 method:com.alibaba.dubbo.registry.support.AbstractRegistryFactory.destroyAll(AbstractRegistryFactory.java:63)
+ [DUBBO] Close all registries [zookeeper://192.168.25.129:2181/com.alibaba.dubbo.registry.RegistryService?application=qmall-manager&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=9744&timestamp=1525181298717], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,392 method:com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:485)
+ [DUBBO] Destroy registry:zookeeper://192.168.25.129:2181/com.alibaba.dubbo.registry.RegistryService?application=qmall-manager&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=9744&timestamp=1525181298717, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,392 method:com.alibaba.dubbo.registry.support.AbstractRegistry.unregister(AbstractRegistry.java:312)
+ [DUBBO] Unregister: dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,399 method:com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:494)
+ [DUBBO] Destroy unregister url dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,399 method:com.alibaba.dubbo.registry.support.AbstractRegistry.unregister(AbstractRegistry.java:312)
+ [DUBBO] Unregister: dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,413 method:com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:494)
+ [DUBBO] Destroy unregister url dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,414 method:com.alibaba.dubbo.registry.support.AbstractRegistry.unsubscribe(AbstractRegistry.java:343)
+ [DUBBO] Unsubscribe: provider://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,416 method:com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:510)
+ [DUBBO] Destroy unsubscribe url provider://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,417 method:com.alibaba.dubbo.registry.support.AbstractRegistry.unsubscribe(AbstractRegistry.java:343)
+ [DUBBO] Unsubscribe: provider://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,418 method:com.alibaba.dubbo.registry.support.AbstractRegistry.destroy(AbstractRegistry.java:510)
+ [DUBBO] Destroy unsubscribe url provider://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&category=configurators&check=false&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,418 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:82)
+Terminate ZkClient event thread.
+
+
+[INFO ] 2018-05-01 21:30:11,421 method:org.apache.zookeeper.ZooKeeper.close(ZooKeeper.java:684)
+Session: 0x1610e55653b0003 closed
+
+
+[INFO ] 2018-05-01 21:30:11,422 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.destroy(DubboProtocol.java:393)
+ [DUBBO] Close dubbo server: /192.168.25.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,423 method:com.alibaba.dubbo.remoting.transport.AbstractServer.close(AbstractServer.java:146)
+ [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /192.168.25.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,426 method:org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:519)
+EventThread shut down for session: 0x1610e55653b0003
+
+
+[INFO ] 2018-05-01 21:30:11,430 method:com.alibaba.dubbo.rpc.protocol.AbstractProtocol.destroy(AbstractProtocol.java:76)
+ [DUBBO] Unexport service: dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,431 method:com.alibaba.dubbo.rpc.protocol.AbstractProtocol.destroy(AbstractProtocol.java:76)
+ [DUBBO] Unexport service: dubbo://192.168.25.1:20880/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,431 method:com.alibaba.dubbo.rpc.protocol.AbstractProtocol.destroy(AbstractProtocol.java:76)
+ [DUBBO] Unexport service: injvm://127.0.0.1/net.imwork.lhqing.qmall.service.ItemService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemService&methods=reshelfItem,addItem,getItemList,queryItemById,deleteItem,instockItem,getItemById,updateItem,queryItemDescById,getItemDescById&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181298726, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-05-01 21:30:11,432 method:com.alibaba.dubbo.rpc.protocol.AbstractProtocol.destroy(AbstractProtocol.java:76)
+ [DUBBO] Unexport service: injvm://127.0.0.1/net.imwork.lhqing.qmall.service.ItemCatService?anyhost=true&application=qmall-manager&dubbo=2.5.3&interface=net.imwork.lhqing.qmall.service.ItemCatService&methods=getItemCat&pid=9744&revision=interface&side=provider&timeout=300000&timestamp=1525181299507, dubbo version: 2.5.3, current host: 127.0.0.1

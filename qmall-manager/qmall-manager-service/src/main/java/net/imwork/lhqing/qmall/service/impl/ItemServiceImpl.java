@@ -126,7 +126,7 @@ public class ItemServiceImpl implements ItemService {
 	@Override
 	public QmallResult addItem(Item item, String desc) {
 		// 利用工具类生成商品id
-		long itemId = IDUtils.getItemId();
+		final long itemId = IDUtils.getItemId();
 		// 补全item的属性
 		item.setId(itemId);
 		// 商品状态，1-正常，2-下架，3-删除
@@ -181,7 +181,7 @@ public class ItemServiceImpl implements ItemService {
 	 * Q:更新商品信息
 	 */
 	@Override
-	public QmallResult updateItem(Item item, String desc) {
+	public QmallResult updateItem(final Item item, String desc) {
 		// 更新商品信息
 		itemMapper.updateByPrimaryKeySelective(item);
 
@@ -217,7 +217,7 @@ public class ItemServiceImpl implements ItemService {
 	 * Q:根据商品Id集合删除商品
 	 */
 	@Override
-	public QmallResult deleteItem(Long[] ids) {
+	public QmallResult deleteItem(final Long[] ids) {
 		// Q:删除商品信息
 		ItemExample itemExample = new ItemExample();
 		itemExample.createCriteria().andIdIn(Arrays.asList(ids));
@@ -250,7 +250,7 @@ public class ItemServiceImpl implements ItemService {
 	 * Q:根据商品Id集合下架商品
 	 */
 	@Override
-	public QmallResult instockItem(Long[] ids) {
+	public QmallResult instockItem(final Long[] ids) {
 		// Q:匹配在对应Id集合中的商品
 		ItemExample itemExample = new ItemExample();
 		itemExample.createCriteria().andIdIn(Arrays.asList(ids));
@@ -291,7 +291,7 @@ public class ItemServiceImpl implements ItemService {
 		item.setStatus((byte) 1);
 		itemMapper.updateByExampleSelective(item, itemExample);
 
-		for (Long itemId : ids) {
+		for (final Long itemId : ids) {
 			// Q:发送商品添加(更新)消息
 			jmsTemplate.send(topicDestination, new MessageCreator() {
 
