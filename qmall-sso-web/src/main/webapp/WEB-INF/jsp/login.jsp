@@ -18,7 +18,7 @@
 <body>
 	<!-- header -->
 	<div class="header">
-		<a href="http://www.e3mall.cn"><img src="/images/logo.png" border="0"><span>欢迎登录</span></a>
+		<a href="http://www.e3mall.cn"><!-- <img src="/images/logo.png" border="0"> --><span>欢迎登录</span></a>
 	</div>
 	<!-- login_main -->
 	<div class="login_main clear">

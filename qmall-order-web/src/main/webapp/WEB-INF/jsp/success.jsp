@@ -21,8 +21,8 @@
 <!--shortcut start-->
 <jsp:include page="commons/shortcut.jsp" />
 <!--shortcut end-->
-<div class="logoPay">
-	<div class="logoPayBox"><a href="http://www.e3mall.cn"><img src="/images/logo.jpg" width="345" height="73" border="0"></a></div>
+<div class="logoPay"><!-- 
+	<div class="logoPayBox"><a href="http://www.e3mall.cn"><img src="/images/logo.jpg" width="345" height="73" border="0"></a></div> -->
 </div>
 <div class="pay_main">
 	<div class="pay_newbox">
