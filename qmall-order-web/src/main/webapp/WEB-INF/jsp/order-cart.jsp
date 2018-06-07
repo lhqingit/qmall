@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
 <meta name="format-detection" content="telephone=no" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>订单结算页 -宜立方商城</title>
+<title>订单结算页 -Q商城商城</title>
 <!--结算页面样式-->	
 <link rel="stylesheet" type="text/css" href="/css/jquery.alerts.css?v=20160713" />
 <link rel="stylesheet" type="text/css" href="/css/head.css?v=20160713" />
@@ -55,7 +55,7 @@
     <div class="orderItem">
         <div class="orderCurr" id="userAddress" style="display:block;">
           <ul>
-            <li>入云龙&nbsp;&nbsp;&nbsp;&nbsp;15800888888&nbsp;&nbsp;&nbsp;&nbsp;北京市&nbsp;&nbsp;昌平区&nbsp;&nbsp;北七家镇 修正大厦</li>
+            <li>张小飞&nbsp;&nbsp;&nbsp;&nbsp;15987654321&nbsp;&nbsp;&nbsp;&nbsp;沈阳市&nbsp;&nbsp;铁西区&nbsp;&nbsp;沈阳化工大学</li>
           </ul>
         </div>
     </div>
@@ -73,7 +73,7 @@
 					<span class="tOrder" na="chai1">订单1</span>
 					<div class="sOrders">
 						<div class="scon">
-							<strong>宜立方速运</strong>负责配送。<br>商品下单后尽快为您发货
+							<strong>Q商城速运</strong>负责配送。<br>商品下单后尽快为您发货
 						</div>
 					</div>
 					<span class="clear"></span>

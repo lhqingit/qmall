@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="/css/head.css?v=20160713" />
 <link rel="stylesheet" type="text/css" href="/css/newpay.css?v=20160713" />
 <script type="text/javascript" src="/js/jquery-1.5.1.min.js?v=20160713"></script>
-   <title>订单成功页面 - 宜立方商城</title>
+   <title>订单成功页面 - Q商城</title>
 </head> <body id="mainframe">
 <!--shortcut start-->
 <jsp:include page="commons/shortcut.jsp" />
@@ -33,7 +33,7 @@
             <span class="pay_word2">请您在提交订单后 <em>4小时</em> 内完成支付，超时订单会自动取消。    订单号：${orderId }</span>
         </div>
         <span class="pay_Rmoney">应付金额 : <em class="pay_price">￥
-        <fmt:formatNumber value="${payment}" maxFractionDigits="2" minFractionDigits="2" groupingUsed="true"/>
+        <fmt:formatNumber value="1409" maxFractionDigits="2" minFractionDigits="2" groupingUsed="true"/>
         </em></span>
     </div>   
 	<div class="pay_ment">
